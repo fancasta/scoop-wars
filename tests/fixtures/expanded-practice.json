@@ -1,0 +1,4204 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "x01",
+      "split": "development",
+      "category": "language_routing",
+      "clue": "In the Taiwanese municipality that includes Tamsui, the transit operator began allowing pets onto its light rail before 8 a.m. on weekdays.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/ed337179e92e"
+        ],
+        "summary_facts": [
+          [
+            "pet",
+            "animal"
+          ],
+          [
+            "light rail",
+            "tram"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Pre-rush pet access starts on Taiwan light rail",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "New Taipei Metro began allowing pets in closed carriers on its Tamsui light rail before 8 a.m. on weekdays.",
+                  "full_content": "New Taipei Metro began allowing pets in closed carriers on its Tamsui light rail before 8 a.m. on weekdays.",
+                  "url": "https://wire.example/news/fedb9350a6bb"
+                },
+                {
+                  "title": "淡海輕軌平日早班開放寵物搭乘",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新北捷運公司今起開放民眾於平日上午八時前，攜帶置於提籠中的寵物搭乘淡海輕軌。",
+                  "full_content": "新北捷運公司今起開放民眾於平日上午八時前，攜帶置於提籠中的寵物搭乘淡海輕軌。",
+                  "url": "https://ztrad.example/news/ed337179e92e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Pre-rush pet access starts on Taiwan light rail",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "New Taipei Metro began allowing pets in closed carriers on its Tamsui light rail before 8 a.m. on weekdays.",
+                  "full_content": "New Taipei Metro began allowing pets in closed carriers on its Tamsui light rail before 8 a.m. on weekdays.",
+                  "url": "https://wire.example/news/fedb9350a6bb"
+                },
+                {
+                  "title": "淡海輕軌平日早班開放寵物搭乘",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新北捷運公司今起開放民眾於平日上午八時前，攜帶置於提籠中的寵物搭乘淡海輕軌。",
+                  "full_content": "新北捷運公司今起開放民眾於平日上午八時前，攜帶置於提籠中的寵物搭乘淡海輕軌。",
+                  "url": "https://ztrad.example/news/ed337179e92e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The English round-up covers the same facts. This localized clue has a Traditional Chinese source."
+    },
+    {
+      "id": "x02",
+      "split": "development",
+      "category": "language_routing",
+      "clue": "Surabaya's public library began Sunday hours for people who can only visit on weekends.",
+      "expected": {
+        "urls": [
+          "https://idmetro.example/news/0ac94ba3c29d"
+        ],
+        "summary_facts": [
+          [
+            "sunday"
+          ],
+          [
+            "library",
+            "libraries"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Weekend services expand in East Java",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Surabaya's city library started opening on Sundays for regular lending and returns.",
+                  "full_content": "Surabaya's city library started opening on Sundays for regular lending and returns.",
+                  "url": "https://wire.example/news/cb45de72759d"
+                },
+                {
+                  "title": "Perpustakaan Kota Surabaya mulai buka Minggu",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Perpustakaan Kota Surabaya mulai membuka layanan peminjaman dan pengembalian pada hari Minggu bagi warga yang tidak sempat datang pada hari kerja.",
+                  "full_content": "Perpustakaan Kota Surabaya mulai membuka layanan peminjaman dan pengembalian pada hari Minggu bagi warga yang tidak sempat datang pada hari kerja.",
+                  "url": "https://idmetro.example/news/0ac94ba3c29d"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Weekend services expand in East Java",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Surabaya's city library started opening on Sundays for regular lending and returns.",
+                  "full_content": "Surabaya's city library started opening on Sundays for regular lending and returns.",
+                  "url": "https://wire.example/news/cb45de72759d"
+                },
+                {
+                  "title": "Perpustakaan Kota Surabaya mulai buka Minggu",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Perpustakaan Kota Surabaya mulai membuka layanan peminjaman dan pengembalian pada hari Minggu bagi warga yang tidak sempat datang pada hari kerja.",
+                  "full_content": "Perpustakaan Kota Surabaya mulai membuka layanan peminjaman dan pengembalian pada hari Minggu bagi warga yang tidak sempat datang pada hari kerja.",
+                  "url": "https://idmetro.example/news/0ac94ba3c29d"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Prefer the original Bahasa Indonesia city report over a matching English round-up."
+    },
+    {
+      "id": "x03",
+      "split": "holdout",
+      "category": "language_routing",
+      "clue": "A Swiss university will lend its laser scanners to surveyors mapping earthquake damage in northern Italy.",
+      "expected": {
+        "urls": [
+          "https://wire.example/news/b39abbbc7176"
+        ],
+        "summary_facts": [
+          [
+            "laser",
+            "scanner"
+          ],
+          [
+            "italy",
+            "italian"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Swiss campus lends equipment to Italian surveyors",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A Swiss university will lend laser scanners to surveyors assessing earthquake damage in northern Italy.",
+                  "full_content": "A Swiss university will lend laser scanners to surveyors assessing earthquake damage in northern Italy.",
+                  "url": "https://wire.example/news/b39abbbc7176"
+                },
+                {
+                  "title": "瑞士大学与意大利机构合作",
+                  "language": "zh",
+                  "authors": [
+                    "海港新闻"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "瑞士一所大学将把激光扫描设备借给测绘人员，用于记录意大利北部地震造成的损害。",
+                  "full_content": "瑞士一所大学将把激光扫描设备借给测绘人员，用于记录意大利北部地震造成的损害。",
+                  "url": "https://zharbor.example/news/cc44d2f6d927"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Swiss campus lends equipment to Italian surveyors",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A Swiss university will lend laser scanners to surveyors assessing earthquake damage in northern Italy.",
+                  "full_content": "A Swiss university will lend laser scanners to surveyors assessing earthquake damage in northern Italy.",
+                  "url": "https://wire.example/news/b39abbbc7176"
+                },
+                {
+                  "title": "瑞士大学与意大利机构合作",
+                  "language": "zh",
+                  "authors": [
+                    "海港新闻"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "瑞士一所大学将把激光扫描设备借给测绘人员，用于记录意大利北部地震造成的损害。",
+                  "full_content": "瑞士一所大学将把激光扫描设备借给测绘人员，用于记录意大利北部地震造成的损害。",
+                  "url": "https://zharbor.example/news/cc44d2f6d927"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "International coverage defaults to English even though a Chinese rewrite is present."
+    },
+    {
+      "id": "x04",
+      "split": "development",
+      "category": "language_routing",
+      "clue": "A new public shuttle in Kota Kinabalu has a weekday stop at the civic swimming complex.",
+      "expected": {
+        "urls": [
+          "https://wire.example/news/99c74c93fd1a"
+        ],
+        "summary_facts": [
+          [
+            "shuttle",
+            "bus"
+          ],
+          [
+            "pool",
+            "swim",
+            "aquatic"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Jalur angkutan baru di Sabah",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Rute angkutan kota di Kota Kinabalu kini memiliki pemberhentian hari kerja di kompleks renang kota.",
+                  "full_content": "Rute angkutan kota di Kota Kinabalu kini memiliki pemberhentian hari kerja di kompleks renang kota.",
+                  "url": "https://idregional.example/news/88107421d123"
+                },
+                {
+                  "title": "Civic shuttle adds pool connection",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Kota Kinabalu launched a civic shuttle with a weekday stop at the municipal aquatic centre.",
+                  "full_content": "Kota Kinabalu launched a civic shuttle with a weekday stop at the municipal aquatic centre.",
+                  "url": "https://wire.example/news/99c74c93fd1a"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Jalur angkutan baru di Sabah",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Rute angkutan kota di Kota Kinabalu kini memiliki pemberhentian hari kerja di kompleks renang kota.",
+                  "full_content": "Rute angkutan kota di Kota Kinabalu kini memiliki pemberhentian hari kerja di kompleks renang kota.",
+                  "url": "https://idregional.example/news/88107421d123"
+                },
+                {
+                  "title": "Civic shuttle adds pool connection",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Kota Kinabalu launched a civic shuttle with a weekday stop at the municipal aquatic centre.",
+                  "full_content": "Kota Kinabalu launched a civic shuttle with a weekday stop at the municipal aquatic centre.",
+                  "url": "https://wire.example/news/99c74c93fd1a"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Malay city and vocabulary do not make an Indonesian-local source mandatory."
+    },
+    {
+      "id": "x05",
+      "split": "holdout",
+      "category": "language_routing",
+      "clue": "The operator of Hong Kong's island trams is running a free transfer for passengers connecting between two named routes at Kennedy Town this weekend.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/42f4d9c77959"
+        ],
+        "summary_facts": [
+          [
+            "tram"
+          ],
+          [
+            "free",
+            "waive",
+            "fare-free"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Hong Kong tram transfer week",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A local note said Hong Kong Tramways would waive transfer fares at Kennedy Town between the Western Market and Causeway Bay routes this weekend.",
+                  "full_content": "A local note said Hong Kong Tramways would waive transfer fares at Kennedy Town between the Western Market and Causeway Bay routes this weekend.",
+                  "url": "https://wire.example/news/8ac2b0e6fb55"
+                },
+                {
+                  "title": "堅尼地城電車週末試行免費轉乘",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "香港電車宣布，本週末在堅尼地城來往西港城及銅鑼灣路線的乘客可免費轉乘。",
+                  "full_content": "香港電車宣布，本週末在堅尼地城來往西港城及銅鑼灣路線的乘客可免費轉乘。",
+                  "url": "https://ztrad.example/news/42f4d9c77959"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Hong Kong tram transfer week",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A local note said Hong Kong Tramways would waive transfer fares at Kennedy Town between the Western Market and Causeway Bay routes this weekend.",
+                  "full_content": "A local note said Hong Kong Tramways would waive transfer fares at Kennedy Town between the Western Market and Causeway Bay routes this weekend.",
+                  "url": "https://wire.example/news/8ac2b0e6fb55"
+                },
+                {
+                  "title": "堅尼地城電車週末試行免費轉乘",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "香港電車宣布，本週末在堅尼地城來往西港城及銅鑼灣路線的乘客可免費轉乘。",
+                  "full_content": "香港電車宣布，本週末在堅尼地城來往西港城及銅鑼灣路線的乘客可免費轉乘。",
+                  "url": "https://ztrad.example/news/42f4d9c77959"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "An exact foreign-language lookalike does not replace the correct localized report."
+    },
+    {
+      "id": "x06",
+      "split": "development",
+      "category": "quantity",
+      "clue": "A museum bought about 1.2 thousand new archival boxes instead of replacing every cabinet.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/bb164c4a85e8"
+        ],
+        "summary_facts": [
+          [
+            "box",
+            "boxes"
+          ],
+          [
+            "1,187",
+            "1187",
+            "1.2 thousand",
+            "1,200",
+            "1200",
+            "1.2k"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Museum purchases 1,187 archive boxes",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The municipal museum bought 1,187 new archival boxes and left its existing cabinets in service.",
+                  "full_content": "The municipal museum bought 1,187 new archival boxes and left its existing cabinets in service.",
+                  "url": "https://town.example/news/bb164c4a85e8"
+                },
+                {
+                  "title": "Museum chooses 1,800 archive boxes",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A maritime museum bought 1,800 boxes and replaced several cabinets.",
+                  "full_content": "A maritime museum bought 1,800 boxes and replaced several cabinets.",
+                  "url": "https://wire.example/news/3269e5f2f4cc"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Museum purchases 1,187 archive boxes",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The municipal museum bought 1,187 new archival boxes and left its existing cabinets in service.",
+                  "full_content": "The municipal museum bought 1,187 new archival boxes and left its existing cabinets in service.",
+                  "url": "https://town.example/news/bb164c4a85e8"
+                },
+                {
+                  "title": "Museum chooses 1,800 archive boxes",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A maritime museum bought 1,800 boxes and replaced several cabinets.",
+                  "full_content": "A maritime museum bought 1,800 boxes and replaced several cabinets.",
+                  "url": "https://wire.example/news/3269e5f2f4cc"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "1,187 rounds to about 1.2 thousand. The other institution also changed its cabinets."
+    },
+    {
+      "id": "x07",
+      "split": "holdout",
+      "category": "quantity",
+      "clue": "Makassar's municipal clinic charged 15,000 rupiah per printed copy of a nonmedical seminar booklet.",
+      "expected": {
+        "urls": [
+          "https://idregional.example/news/4917f656e405"
+        ],
+        "summary_facts": [
+          [
+            "15,000",
+            "15000",
+            "15 thousand",
+            "15.000",
+            "15k"
+          ],
+          [
+            "booklet",
+            "book",
+            "copy"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Klinik kota cetak buku seminar",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Klinik kota Makassar menyiapkan buku seminar senilai Rp1,8 juta.",
+                  "full_content": "Klinik kota Makassar mencetak buku seminar umum dengan tarif Rp15.000 per eksemplar. Sebanyak 120 buku disiapkan dengan nilai keseluruhan Rp1,8 juta.",
+                  "url": "https://idregional.example/news/4917f656e405"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Klinik kota cetak buku seminar",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Klinik kota Makassar menyiapkan buku seminar senilai Rp1,8 juta.",
+                  "full_content": "Klinik kota Makassar mencetak buku seminar umum dengan tarif Rp15.000 per eksemplar. Sebanyak 120 buku disiapkan dengan nilai keseluruhan Rp1,8 juta.",
+                  "url": "https://idregional.example/news/4917f656e405"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The per-copy amount and aggregate are different fields. Decisive evidence occurs only in the article body."
+    },
+    {
+      "id": "x08",
+      "split": "development",
+      "category": "quantity",
+      "clue": "Revenue at a regional radio broadcaster fell by three percentage points of its budget.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Broadcaster revenue down 3 percent",
+                  "language": "en",
+                  "authors": [
+                    "Markets Desk"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A regional broadcaster said revenue fell by 3 percent from the same period last year. It said the revenue share of its budget was unchanged.",
+                  "full_content": "A regional broadcaster said revenue fell by 3 percent from the same period last year. It said the revenue share of its budget was unchanged.",
+                  "url": "https://finance.example/news/328f04f9ef31"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Broadcaster revenue down 3 percent",
+                  "language": "en",
+                  "authors": [
+                    "Markets Desk"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A regional broadcaster said revenue fell by 3 percent from the same period last year. It said the revenue share of its budget was unchanged.",
+                  "full_content": "A regional broadcaster said revenue fell by 3 percent from the same period last year. It said the revenue share of its budget was unchanged.",
+                  "url": "https://finance.example/news/328f04f9ef31"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Percent change and percentage-point budget share cannot be substituted."
+    },
+    {
+      "id": "x09",
+      "split": "development",
+      "category": "quantity",
+      "clue": "A council installed 800 metres of fencing around two dog parks.",
+      "expected": {
+        "urls": [
+          "https://city.example/news/a6a8ecf0d6f9"
+        ],
+        "summary_facts": [
+          [
+            "800",
+            "0.8",
+            "eight hundred"
+          ],
+          [
+            "dog park",
+            "dog run"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "New fencing at city's dog parks",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The council installed 0.8 kilometres of fencing across two dog parks.",
+                  "full_content": "The council installed 0.8 kilometres of fencing across two dog parks.",
+                  "url": "https://city.example/news/a6a8ecf0d6f9"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "New fencing at city's dog parks",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The council installed 0.8 kilometres of fencing across two dog parks.",
+                  "full_content": "The council installed 0.8 kilometres of fencing across two dog parks.",
+                  "url": "https://city.example/news/a6a8ecf0d6f9"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The same measurement can use equivalent metric units."
+    },
+    {
+      "id": "x10",
+      "split": "development",
+      "category": "quantity",
+      "clue": "The Hong Kong venue sold exactly 60 tickets for the first rehearsal shown to the public.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "香港公開綵排共售五十六張門票",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "香港場館首次開放舞蹈綵排，共售出五十六張門票，另有四張由主辦方免費贈出。",
+                  "full_content": "香港場館首次開放舞蹈綵排，共售出五十六張門票，另有四張由主辦方免費贈出。",
+                  "url": "https://ztrad.example/news/8a8e315a14e0"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "香港公開綵排共售五十六張門票",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "香港場館首次開放舞蹈綵排，共售出五十六張門票，另有四張由主辦方免費贈出。",
+                  "full_content": "香港場館首次開放舞蹈綵排，共售出五十六張門票，另有四張由主辦方免費贈出。",
+                  "url": "https://ztrad.example/news/8a8e315a14e0"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The sum of sold and gifted tickets cannot satisfy the exact sales count."
+    },
+    {
+      "id": "x11",
+      "split": "holdout",
+      "category": "material_contradiction",
+      "clue": "A small railway company opened a direct train from Dunbar to the airport without changing trains.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dunbar-airport fare partnership starts",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A new fare agreement covers the route from Dunbar to the airport, but passengers must transfer at the central station.",
+                  "full_content": "A new fare agreement covers the route from Dunbar to the airport, but passengers must transfer at the central station.",
+                  "url": "https://rail.example/news/dd926adef3ef"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dunbar-airport fare partnership starts",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A new fare agreement covers the route from Dunbar to the airport, but passengers must transfer at the central station.",
+                  "full_content": "A new fare agreement covers the route from Dunbar to the airport, but passengers must transfer at the central station.",
+                  "url": "https://rail.example/news/dd926adef3ef"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The absence of a transfer is an explicit service claim."
+    },
+    {
+      "id": "x12",
+      "split": "development",
+      "category": "material_contradiction",
+      "clue": "The city ordered landlords to close every balcony after the inspection of a waterfront tower.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Engineers inspect balconies at waterfront tower",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Inspectors recommended closing several balconies at one waterfront tower, but the city did not issue a closure order.",
+                  "full_content": "Inspectors recommended closing several balconies at one waterfront tower, but the city did not issue a closure order.",
+                  "url": "https://city.example/news/902587bd4c00"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Engineers inspect balconies at waterfront tower",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Inspectors recommended closing several balconies at one waterfront tower, but the city did not issue a closure order.",
+                  "full_content": "Inspectors recommended closing several balconies at one waterfront tower, but the city did not issue a closure order.",
+                  "url": "https://city.example/news/902587bd4c00"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A recommendation for several balconies is materially different from an order covering all balconies."
+    },
+    {
+      "id": "x13",
+      "split": "development",
+      "category": "material_contradiction",
+      "clue": "Bandung's library transferred its old manuscripts to a university while keeping control of the copyright.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Perpustakaan Bandung pamerkan naskah kampus",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Universitas menyerahkan naskah lama kepada Perpustakaan Bandung. Hak cipta tetap dipegang oleh universitas sebagai pihak yang menyerahkan naskah.",
+                  "full_content": "Universitas menyerahkan naskah lama kepada Perpustakaan Bandung. Hak cipta tetap dipegang oleh universitas sebagai pihak yang menyerahkan naskah.",
+                  "url": "https://idmetro.example/news/0c7f16147b83"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Perpustakaan Bandung pamerkan naskah kampus",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Universitas menyerahkan naskah lama kepada Perpustakaan Bandung. Hak cipta tetap dipegang oleh universitas sebagai pihak yang menyerahkan naskah.",
+                  "full_content": "Universitas menyerahkan naskah lama kepada Perpustakaan Bandung. Hak cipta tetap dipegang oleh universitas sebagai pihak yang menyerahkan naskah.",
+                  "url": "https://idmetro.example/news/0c7f16147b83"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Explicit transfer direction and copyright holder are both reversed."
+    },
+    {
+      "id": "x14",
+      "split": "holdout",
+      "category": "material_contradiction",
+      "clue": "With five minutes to play, the visiting field hockey side equalized and went on to win.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Late goal sends visitors into extra time",
+                  "language": "en",
+                  "authors": [
+                    "Match Report"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The visiting field hockey team equalized with five minutes left, but lost in extra time.",
+                  "full_content": "The visiting field hockey team equalized with five minutes left, but lost in extra time.",
+                  "url": "https://sports.example/news/2e74e791cfb2"
+                },
+                {
+                  "title": "Home team scores late and wins",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "At another field hockey match, the home team equalized late and won.",
+                  "full_content": "At another field hockey match, the home team equalized late and won.",
+                  "url": "https://wire.example/news/4558c1c3bf28"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Late goal sends visitors into extra time",
+                  "language": "en",
+                  "authors": [
+                    "Match Report"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The visiting field hockey team equalized with five minutes left, but lost in extra time.",
+                  "full_content": "The visiting field hockey team equalized with five minutes left, but lost in extra time.",
+                  "url": "https://sports.example/news/2e74e791cfb2"
+                },
+                {
+                  "title": "Home team scores late and wins",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "At another field hockey match, the home team equalized late and won.",
+                  "full_content": "At another field hockey match, the home team equalized late and won.",
+                  "url": "https://wire.example/news/4558c1c3bf28"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "One result has the correct actor and timing, the other the correct outcome. Combining them would yield a fake match."
+    },
+    {
+      "id": "x15",
+      "split": "development",
+      "category": "material_contradiction",
+      "clue": "Students at a vocational school designed the theatre's new set, which will be reused next year.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Vocational students build theatre set",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Vocational students assembled the reusable theatre set. Its designer was an independent professional.",
+                  "full_content": "Vocational students assembled the reusable theatre set. Its designer was an independent professional.",
+                  "url": "https://town.example/news/5d141663678d"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Vocational students build theatre set",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Vocational students assembled the reusable theatre set. Its designer was an independent professional.",
+                  "full_content": "Vocational students assembled the reusable theatre set. Its designer was an independent professional.",
+                  "url": "https://town.example/news/5d141663678d"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Construction and design are material role differences."
+    },
+    {
+      "id": "x16",
+      "split": "development",
+      "category": "freshness",
+      "clue": "A county's first all-night warming centre opened for three nights while a boiler replacement was underway.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "All-night warming centre opens for boiler outage",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 1520,
+                  "highlight": "The county's first all-night warming centre opened for three nights during a boiler replacement.",
+                  "full_content": "The county's first all-night warming centre opened for three nights during a boiler replacement.",
+                  "url": "https://town.example/news/bbc260f198cb"
+                },
+                {
+                  "title": "County extends daytime help desk",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The county extended its daytime help desk by an hour.",
+                  "full_content": "The county extended its daytime help desk by an hour.",
+                  "url": "https://city.example/news/2659ea157e40"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "All-night warming centre opens for boiler outage",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 1520,
+                  "highlight": "The county's first all-night warming centre opened for three nights during a boiler replacement.",
+                  "full_content": "The county's first all-night warming centre opened for three nights during a boiler replacement.",
+                  "url": "https://town.example/news/bbc260f198cb"
+                },
+                {
+                  "title": "County extends daytime help desk",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The county extended its daytime help desk by an hour.",
+                  "full_content": "The county extended its daytime help desk by an hour.",
+                  "url": "https://city.example/news/2659ea157e40"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The exact match is outside the one-day window. The fresh item is a different service."
+    },
+    {
+      "id": "x17",
+      "split": "holdout",
+      "category": "freshness",
+      "clue": "A city utility shut its east intake for six hours and warned that tap-water pressure could temporarily fall.",
+      "expected": {
+        "urls": [
+          "https://wire.example/news/bd5b1397e3cd"
+        ],
+        "summary_facts": [
+          [
+            "six",
+            "6"
+          ],
+          [
+            "pressure"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Six-hour east intake shutdown",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": null,
+                  "highlight": "A six-hour shutdown of the east intake may temporarily lower tap-water pressure, the city utility said.",
+                  "full_content": "A six-hour shutdown of the east intake may temporarily lower tap-water pressure, the city utility said.",
+                  "url": "https://city.example/news/7f45491c63b8"
+                },
+                {
+                  "title": "Pressure warning after intake closure",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 120,
+                  "highlight": "The city utility halted its east intake for six hours and warned of temporarily lower tap-water pressure.",
+                  "full_content": "The city utility halted its east intake for six hours and warned of temporarily lower tap-water pressure.",
+                  "url": "https://wire.example/news/bd5b1397e3cd"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Six-hour east intake shutdown",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": null,
+                  "highlight": "A six-hour shutdown of the east intake may temporarily lower tap-water pressure, the city utility said.",
+                  "full_content": "A six-hour shutdown of the east intake may temporarily lower tap-water pressure, the city utility said.",
+                  "url": "https://city.example/news/7f45491c63b8"
+                },
+                {
+                  "title": "Pressure warning after intake closure",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 120,
+                  "highlight": "The city utility halted its east intake for six hours and warned of temporarily lower tap-water pressure.",
+                  "full_content": "The city utility halted its east intake for six hours and warned of temporarily lower tap-water pressure.",
+                  "url": "https://wire.example/news/bd5b1397e3cd"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The undated article is weaker than the dated report of the same shutdown."
+    },
+    {
+      "id": "x18",
+      "split": "development",
+      "category": "freshness",
+      "clue": "The lighthouse webcam briefly went dark before restoration was announced.",
+      "expected": {
+        "urls": [
+          "https://coast.example/news/352b76cfb8b3"
+        ],
+        "summary_facts": [
+          [
+            "lighthouse"
+          ],
+          [
+            "webcam",
+            "camera"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Lighthouse camera back online",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 1410,
+                  "highlight": "The harbour authority said a short outage of its lighthouse webcam ended after a network reset.",
+                  "full_content": "The harbour authority said a short outage of its lighthouse webcam ended after a network reset.",
+                  "url": "https://coast.example/news/352b76cfb8b3"
+                },
+                {
+                  "title": "Latest lighthouse camera restoration",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 1445,
+                  "highlight": "The harbour authority said a short lighthouse webcam outage ended after a network reset.",
+                  "full_content": "The harbour authority said a short lighthouse webcam outage ended after a network reset.",
+                  "url": "https://republish.example/news/4cbc65d9241e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Lighthouse camera back online",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 1410,
+                  "highlight": "The harbour authority said a short outage of its lighthouse webcam ended after a network reset.",
+                  "full_content": "The harbour authority said a short outage of its lighthouse webcam ended after a network reset.",
+                  "url": "https://coast.example/news/352b76cfb8b3"
+                },
+                {
+                  "title": "Latest lighthouse camera restoration",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 1445,
+                  "highlight": "The harbour authority said a short lighthouse webcam outage ended after a network reset.",
+                  "full_content": "The harbour authority said a short lighthouse webcam outage ended after a network reset.",
+                  "url": "https://republish.example/news/4cbc65d9241e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Both articles match, but one falls just outside the 24-hour boundary."
+    },
+    {
+      "id": "x19",
+      "split": "holdout",
+      "category": "freshness",
+      "clue": "A rural bus route gained an extra evening trip during the public market's anniversary week.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Extra night departure for anniversary market",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": -180,
+                  "highlight": "The rural Route 38 bus gains an extra evening trip during the public market's anniversary week.",
+                  "full_content": "The rural Route 38 bus gains an extra evening trip during the public market's anniversary week.",
+                  "url": "https://rail.example/news/0cd1fd5ec926"
+                },
+                {
+                  "title": "Council considers evening bus pilot",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "The county is considering an evening bus pilot next season.",
+                  "full_content": "The county is considering an evening bus pilot next season.",
+                  "url": "https://town.example/news/d26836ca918e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Extra night departure for anniversary market",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": -180,
+                  "highlight": "The rural Route 38 bus gains an extra evening trip during the public market's anniversary week.",
+                  "full_content": "The rural Route 38 bus gains an extra evening trip during the public market's anniversary week.",
+                  "url": "https://rail.example/news/0cd1fd5ec926"
+                },
+                {
+                  "title": "Council considers evening bus pilot",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "The county is considering an evening bus pilot next season.",
+                  "full_content": "The county is considering an evening bus pilot next season.",
+                  "url": "https://town.example/news/d26836ca918e"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A future publication timestamp cannot establish that a report was already published."
+    },
+    {
+      "id": "x20",
+      "split": "development",
+      "category": "freshness",
+      "clue": "The coast's tidal warning system was tested using a signal heard in three port districts.",
+      "expected": {
+        "urls": [
+          "https://coast.example/news/e566a2b55b8b",
+          "https://wire.example/news/ec19f05b1b04"
+        ],
+        "summary_facts": [
+          [
+            "three",
+            "3"
+          ],
+          [
+            "testing",
+            "tested",
+            "test"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Warning horn reaches three ports",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 110,
+                  "highlight": "At a test of the coast's tidal-warning system, a siren sounded in three port districts.",
+                  "full_content": "At a test of the coast's tidal-warning system, a siren sounded in three port districts.",
+                  "url": "https://coast.example/news/e566a2b55b8b"
+                },
+                {
+                  "title": "Three ports reprint tidal warning notice",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 25,
+                  "highlight": "A horn sounded in three port districts at a test of the coastal warning system.",
+                  "full_content": "A horn sounded in three port districts at a test of the coastal warning system.",
+                  "url": "https://wire.example/news/ec19f05b1b04"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Warning horn reaches three ports",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 110,
+                  "highlight": "At a test of the coast's tidal-warning system, a siren sounded in three port districts.",
+                  "full_content": "At a test of the coast's tidal-warning system, a siren sounded in three port districts.",
+                  "url": "https://coast.example/news/e566a2b55b8b"
+                },
+                {
+                  "title": "Three ports reprint tidal warning notice",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 25,
+                  "highlight": "A horn sounded in three port districts at a test of the coastal warning system.",
+                  "full_content": "A horn sounded in three port districts at a test of the coastal warning system.",
+                  "url": "https://wire.example/news/ec19f05b1b04"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Both reports are in the freshness window and substantiate the event. Relative publication order does not invalidate the second."
+    },
+    {
+      "id": "x21",
+      "split": "development",
+      "category": "source_selection",
+      "clue": "A suburban utility will use the roof of a recycling shed for a pilot of 52 solar panels.",
+      "expected": {
+        "urls": [
+          "https://city.example/news/45f7cec8aed5"
+        ],
+        "summary_facts": [
+          [
+            "52",
+            "fifty-two",
+            "fifty two"
+          ],
+          [
+            "solar",
+            "panel"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "A board post on 52 panels",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": null,
+                  "highlight": "A shared clipping claims that a suburban utility approved a 52-panel roof pilot at the recycling shed.",
+                  "full_content": "A shared clipping claims that a suburban utility approved a 52-panel roof pilot at the recycling shed.",
+                  "url": "https://republish.example/news/9c2200c29c93"
+                },
+                {
+                  "title": "Utility votes to put 52 panels on recycling roof",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 75,
+                  "highlight": "The suburban utility board approved a pilot of 52 solar panels on the roof of its recycling shed.",
+                  "full_content": "The suburban utility board approved a pilot of 52 solar panels on the roof of its recycling shed.",
+                  "url": "https://city.example/news/45f7cec8aed5"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "A board post on 52 panels",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": null,
+                  "highlight": "A shared clipping claims that a suburban utility approved a 52-panel roof pilot at the recycling shed.",
+                  "full_content": "A shared clipping claims that a suburban utility approved a 52-panel roof pilot at the recycling shed.",
+                  "url": "https://republish.example/news/9c2200c29c93"
+                },
+                {
+                  "title": "Utility votes to put 52 panels on recycling roof",
+                  "language": "en",
+                  "authors": [
+                    "Civic Newsroom"
+                  ],
+                  "published_age_minutes": 75,
+                  "highlight": "The suburban utility board approved a pilot of 52 solar panels on the roof of its recycling shed.",
+                  "full_content": "The suburban utility board approved a pilot of 52 solar panels on the roof of its recycling shed.",
+                  "url": "https://city.example/news/45f7cec8aed5"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The original dated notice establishes the vote and exact quantity."
+    },
+    {
+      "id": "x22",
+      "split": "development",
+      "category": "source_selection",
+      "clue": "A county library will switch its printed route maps to large type after a reader survey.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/fb2406cc88a3",
+          "https://wire.example/news/270520bee94c"
+        ],
+        "summary_facts": [
+          [
+            "map"
+          ],
+          [
+            "large",
+            "larger",
+            "bigger"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Second-hand report for library map upgrade",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 130,
+                  "highlight": "A copied text says the county library will print route maps in larger type after a reader survey.",
+                  "full_content": "A copied text says the county library will print route maps in larger type after a reader survey.",
+                  "url": "https://republish.example/news/47e6774d5199"
+                },
+                {
+                  "title": "Original reporting on large-type route maps",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 100,
+                  "highlight": "After a reader survey, the county library will switch its printed route maps to large type, a spokesperson confirmed.",
+                  "full_content": "After a reader survey, the county library will switch its printed route maps to large type, a spokesperson confirmed.",
+                  "url": "https://town.example/news/fb2406cc88a3"
+                },
+                {
+                  "title": "Library confirms larger map labels",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "The county library confirmed that its printed route maps will use larger type after a reader survey.",
+                  "full_content": "The county library confirmed that its printed route maps will use larger type after a reader survey.",
+                  "url": "https://wire.example/news/270520bee94c"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Second-hand report for library map upgrade",
+                  "language": "en",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 130,
+                  "highlight": "A copied text says the county library will print route maps in larger type after a reader survey.",
+                  "full_content": "A copied text says the county library will print route maps in larger type after a reader survey.",
+                  "url": "https://republish.example/news/47e6774d5199"
+                },
+                {
+                  "title": "Original reporting on large-type route maps",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 100,
+                  "highlight": "After a reader survey, the county library will switch its printed route maps to large type, a spokesperson confirmed.",
+                  "full_content": "After a reader survey, the county library will switch its printed route maps to large type, a spokesperson confirmed.",
+                  "url": "https://town.example/news/fb2406cc88a3"
+                },
+                {
+                  "title": "Library confirms larger map labels",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "The county library confirmed that its printed route maps will use larger type after a reader survey.",
+                  "full_content": "The county library confirmed that its printed route maps will use larger type after a reader survey.",
+                  "url": "https://wire.example/news/270520bee94c"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Either original outlet supports the full clue. The scraped copy is less authoritative even with an earlier claimed date."
+    },
+    {
+      "id": "x23",
+      "split": "holdout",
+      "category": "source_selection",
+      "clue": "An Indonesian regency's own fire department replaced all six smoke alarms in the historic market hall.",
+      "expected": {
+        "urls": [
+          "https://idregional.example/news/3730772d8c59"
+        ],
+        "summary_facts": [
+          [
+            "six",
+            "6"
+          ],
+          [
+            "alarm"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dinas Damkar ganti enam alarm pasar",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 100,
+                  "highlight": "Dinas Pemadam Kebakaran kabupaten mengganti seluruh enam alarm asap di aula pasar bersejarah.",
+                  "full_content": "Dinas Pemadam Kebakaran kabupaten mengganti seluruh enam alarm asap di aula pasar bersejarah.",
+                  "url": "https://idregional.example/news/3730772d8c59"
+                },
+                {
+                  "title": "Six smoke alarms replaced at historic market",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 160,
+                  "highlight": "The regency fire department replaced all six alarms at the historic market hall.",
+                  "full_content": "The regency fire department replaced all six alarms at the historic market hall.",
+                  "url": "https://wire.example/news/dfef42889670"
+                },
+                {
+                  "title": "Enam alarm pasar dikerjakan kontraktor",
+                  "language": "id",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 120,
+                  "highlight": "Enam alarm diganti di pasar bersejarah oleh kontraktor dari luar kabupaten.",
+                  "full_content": "Enam alarm diganti di pasar bersejarah oleh kontraktor dari luar kabupaten.",
+                  "url": "https://republish.example/news/e925ec7b8c01"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dinas Damkar ganti enam alarm pasar",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 100,
+                  "highlight": "Dinas Pemadam Kebakaran kabupaten mengganti seluruh enam alarm asap di aula pasar bersejarah.",
+                  "full_content": "Dinas Pemadam Kebakaran kabupaten mengganti seluruh enam alarm asap di aula pasar bersejarah.",
+                  "url": "https://idregional.example/news/3730772d8c59"
+                },
+                {
+                  "title": "Six smoke alarms replaced at historic market",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 160,
+                  "highlight": "The regency fire department replaced all six alarms at the historic market hall.",
+                  "full_content": "The regency fire department replaced all six alarms at the historic market hall.",
+                  "url": "https://wire.example/news/dfef42889670"
+                },
+                {
+                  "title": "Enam alarm pasar dikerjakan kontraktor",
+                  "language": "id",
+                  "authors": [
+                    "Daily Clipping Service"
+                  ],
+                  "published_age_minutes": 120,
+                  "highlight": "Enam alarm diganti di pasar bersejarah oleh kontraktor dari luar kabupaten.",
+                  "full_content": "Enam alarm diganti di pasar bersejarah oleh kontraktor dari luar kabupaten.",
+                  "url": "https://republish.example/news/e925ec7b8c01"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The first fully verified source in the local language outranks a foreign-language copy and a wrong actor."
+    },
+    {
+      "id": "x24",
+      "split": "development",
+      "category": "source_selection",
+      "clue": "A sports club added a quiet room at its stadium after a fan survey.",
+      "expected": {
+        "urls": [
+          "https://wire.example/news/2ce7d1979416",
+          "https://sports.example/news/ff68de32e482",
+          "https://town.example/news/3b63a7817aae"
+        ],
+        "summary_facts": [
+          [
+            "quiet",
+            "sensory",
+            "noise-free"
+          ],
+          [
+            "stadium"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Noise-free room installed at club stadium",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 140,
+                  "highlight": "Following a survey of its fans, a sports club opened a quiet room at the stadium.",
+                  "full_content": "Following a survey of its fans, a sports club opened a quiet room at the stadium.",
+                  "url": "https://wire.example/news/2ce7d1979416"
+                },
+                {
+                  "title": "Supporters survey leads to stadium quiet room",
+                  "language": "en",
+                  "authors": [
+                    "Match Report"
+                  ],
+                  "published_age_minutes": 200,
+                  "highlight": "After its fan survey, the club installed a quiet room at the stadium.",
+                  "full_content": "After its fan survey, the club installed a quiet room at the stadium.",
+                  "url": "https://sports.example/news/ff68de32e482"
+                },
+                {
+                  "title": "New sensory room for fans",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 30,
+                  "highlight": "The sports club installed a quiet room inside the stadium after surveying supporters.",
+                  "full_content": "The sports club installed a quiet room inside the stadium after surveying supporters.",
+                  "url": "https://town.example/news/3b63a7817aae"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Noise-free room installed at club stadium",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 140,
+                  "highlight": "Following a survey of its fans, a sports club opened a quiet room at the stadium.",
+                  "full_content": "Following a survey of its fans, a sports club opened a quiet room at the stadium.",
+                  "url": "https://wire.example/news/2ce7d1979416"
+                },
+                {
+                  "title": "Supporters survey leads to stadium quiet room",
+                  "language": "en",
+                  "authors": [
+                    "Match Report"
+                  ],
+                  "published_age_minutes": 200,
+                  "highlight": "After its fan survey, the club installed a quiet room at the stadium.",
+                  "full_content": "After its fan survey, the club installed a quiet room at the stadium.",
+                  "url": "https://sports.example/news/ff68de32e482"
+                },
+                {
+                  "title": "New sensory room for fans",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 30,
+                  "highlight": "The sports club installed a quiet room inside the stadium after surveying supporters.",
+                  "full_content": "The sports club installed a quiet room inside the stadium after surveying supporters.",
+                  "url": "https://town.example/news/3b63a7817aae"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "All are original dated verified reports. Oldest ranks first for bonus eligible stories, but the others earn ordinary credit."
+    },
+    {
+      "id": "x25",
+      "split": "development",
+      "category": "source_selection",
+      "clue": "The Hong Kong gallery has repainted its entire children's wing and reopens it this afternoon.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/a378ad3bacff"
+        ],
+        "summary_facts": [
+          [
+            "child",
+            "kids"
+          ],
+          [
+            "reopen",
+            "re-open"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "兒童展區今午重開",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 75,
+                  "highlight": "香港畫廊確認，整個兒童展區完成重新粉刷，今天下午重新開放。",
+                  "full_content": "香港畫廊確認，整個兒童展區完成重新粉刷，今天下午重新開放。",
+                  "url": "https://ztrad.example/news/a378ad3bacff"
+                },
+                {
+                  "title": "儿童区重开日期待定",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "该画廊翻新儿童区的入口，但尚未确定全面重开时间。",
+                  "full_content": "该画廊翻新儿童区的入口，但尚未确定全面重开时间。",
+                  "url": "https://zmetro.example/news/f31f73f4c0ec"
+                },
+                {
+                  "title": "Gallery's repainted children's wing opens",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 130,
+                  "highlight": "The gallery repainted its entire children's wing and reopens it this afternoon.",
+                  "full_content": "The gallery repainted its entire children's wing and reopens it this afternoon.",
+                  "url": "https://wire.example/news/fca3e65a49e7"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "兒童展區今午重開",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 75,
+                  "highlight": "香港畫廊確認，整個兒童展區完成重新粉刷，今天下午重新開放。",
+                  "full_content": "香港畫廊確認，整個兒童展區完成重新粉刷，今天下午重新開放。",
+                  "url": "https://ztrad.example/news/a378ad3bacff"
+                },
+                {
+                  "title": "儿童区重开日期待定",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 50,
+                  "highlight": "该画廊翻新儿童区的入口，但尚未确定全面重开时间。",
+                  "full_content": "该画廊翻新儿童区的入口，但尚未确定全面重开时间。",
+                  "url": "https://zmetro.example/news/f31f73f4c0ec"
+                },
+                {
+                  "title": "Gallery's repainted children's wing opens",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 130,
+                  "highlight": "The gallery repainted its entire children's wing and reopens it this afternoon.",
+                  "full_content": "The gallery repainted its entire children's wing and reopens it this afternoon.",
+                  "url": "https://wire.example/news/fca3e65a49e7"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The English report is older, but matches for this Hong Kong clue must be Chinese."
+    },
+    {
+      "id": "x26",
+      "split": "development",
+      "category": "evidence_depth",
+      "clue": "At a community garden in Guangzhou, each volunteer got exactly two paper seed packets and a reusable tray.",
+      "expected": {
+        "urls": [
+          "https://zmetro.example/news/c61527f790ef"
+        ],
+        "summary_facts": [
+          [
+            "two",
+            "2"
+          ],
+          [
+            "seed"
+          ],
+          [
+            "tray"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "广州社区花园举办志愿者分发日",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "广州一处社区花园为志愿者准备了种子和可重复使用的用品。",
+                  "full_content": "广州一处社区花园组织志愿者活动，当天每人收到两袋纸包装种子及一个可重复使用的托盘。",
+                  "url": "https://zmetro.example/news/c61527f790ef"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "广州社区花园举办志愿者分发日",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "广州一处社区花园为志愿者准备了种子和可重复使用的用品。",
+                  "full_content": "广州一处社区花园组织志愿者活动，当天每人收到两袋纸包装种子及一个可重复使用的托盘。",
+                  "url": "https://zmetro.example/news/c61527f790ef"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The highlight establishes the event but omits the count and tray. The body verifies the full clue."
+    },
+    {
+      "id": "x27",
+      "split": "development",
+      "category": "evidence_depth",
+      "clue": "The island harbour installed a floating dock that will stay open to the public off-season.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Floating dock installed at island harbour",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Local tradespeople finished installing a floating dock at the island harbour. The harbour manager did not describe any future opening schedule.",
+                  "full_content": "Local tradespeople finished installing a floating dock at the island harbour. The harbour manager did not describe any future opening schedule.",
+                  "url": "https://coast.example/news/2b63d70cb27a"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Floating dock installed at island harbour",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Local tradespeople finished installing a floating dock at the island harbour. The harbour manager did not describe any future opening schedule.",
+                  "full_content": "Local tradespeople finished installing a floating dock at the island harbour. The harbour manager did not describe any future opening schedule.",
+                  "url": "https://coast.example/news/2b63d70cb27a"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Installation is supported. Off-season public access is decisive and unverified."
+    },
+    {
+      "id": "x28",
+      "split": "holdout",
+      "category": "evidence_depth",
+      "clue": "A coffee cooperative in Medan will reopen its roasting workshop on Tuesdays for apprentices.",
+      "expected": {
+        "urls": [
+          "https://idregional.example/news/4be5c8addb8d"
+        ],
+        "summary_facts": [
+          [
+            "tuesday"
+          ],
+          [
+            "roast",
+            "coffee"
+          ],
+          [
+            "apprentice",
+            "trainee",
+            "intern"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Koperasi Medan benahi ruang pelatihan",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Koperasi kopi di Medan menyiapkan renovasi untuk ruang sangrai yang dipakai peserta pelatihan. Jadwal pembukaan kembali belum diumumkan.",
+                  "full_content": "Koperasi kopi di Medan menyiapkan renovasi untuk ruang sangrai yang dipakai peserta pelatihan. Jadwal pembukaan kembali belum diumumkan.",
+                  "url": "https://idmetro.example/news/9190af91cee7"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Bengkel sangrai Medan buka kembali setiap Selasa",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Koperasi kopi di Medan mengumumkan bengkel sangrai akan dibuka kembali setiap Selasa khusus untuk peserta magang.",
+                  "full_content": "Koperasi kopi di Medan mengumumkan bengkel sangrai akan dibuka kembali setiap Selasa khusus untuk peserta magang.",
+                  "url": "https://idregional.example/news/4be5c8addb8d"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The first report identifies the event but lacks a reopening day. The follow-up confirms the decisive schedule."
+    },
+    {
+      "id": "x29",
+      "split": "development",
+      "category": "evidence_depth",
+      "clue": "A regional fair's organizers handed out 300 reusable cups while its entrance counters were being replaced.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Fair recycles reusable cups during ticket desk upgrade",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Organizers introduced reusable cups while replacing the fair's entrance counters. An event official said the exact number issued had not been counted.",
+                  "full_content": "Organizers introduced reusable cups while replacing the fair's entrance counters. An event official said the exact number issued had not been counted.",
+                  "url": "https://town.example/news/de53069a1da5"
+                },
+                {
+                  "title": "300 reusable cups donated to craft group",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A printing company donated 300 reusable cups to a craft group unrelated to the regional fair.",
+                  "full_content": "A printing company donated 300 reusable cups to a craft group unrelated to the regional fair.",
+                  "url": "https://wire.example/news/febe8be6b245"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Fair recycles reusable cups during ticket desk upgrade",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Organizers introduced reusable cups while replacing the fair's entrance counters. An event official said the exact number issued had not been counted.",
+                  "full_content": "Organizers introduced reusable cups while replacing the fair's entrance counters. An event official said the exact number issued had not been counted.",
+                  "url": "https://town.example/news/de53069a1da5"
+                },
+                {
+                  "title": "300 reusable cups donated to craft group",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A printing company donated 300 reusable cups to a craft group unrelated to the regional fair.",
+                  "full_content": "A printing company donated 300 reusable cups to a craft group unrelated to the regional fair.",
+                  "url": "https://wire.example/news/febe8be6b245"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The event is real but the specified quantity cannot be inferred from a separate article."
+    },
+    {
+      "id": "x30",
+      "split": "development",
+      "category": "evidence_depth",
+      "clue": "A coastal town put orange floats on its new public swimming lane, which is open to all adults on weekend mornings.",
+      "expected": {
+        "urls": [
+          "https://coast.example/news/816eb7541e70"
+        ],
+        "summary_facts": [
+          [
+            "orange"
+          ],
+          [
+            "weekend"
+          ],
+          [
+            "swim"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Weekend morning lane opens with orange markers",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The town opened the weekend morning swim lane to adults with orange floats.",
+                  "full_content": "The town opened its public coastal swimming lane to all adults on weekend mornings and marked it with orange floats.",
+                  "url": "https://coast.example/news/816eb7541e70"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Weekend morning lane opens with orange markers",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The town opened the weekend morning swim lane to adults with orange floats.",
+                  "full_content": "The town opened its public coastal swimming lane to all adults on weekend mornings and marked it with orange floats.",
+                  "url": "https://coast.example/news/816eb7541e70"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A strong complete highlight is sufficient even if the full article was not requested."
+    },
+    {
+      "id": "x31",
+      "split": "holdout",
+      "category": "retry",
+      "clue": "The Queanbeyan council moved its monthly open-air craft market to the train station while its paving is repaired.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/d19b489ead88"
+        ],
+        "summary_facts": [
+          [
+            "market"
+          ],
+          [
+            "station"
+          ],
+          [
+            "repair",
+            "paving"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "code": 503,
+            "msg": "Temporary search service outage"
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Market temporarily moves to Queanbeyan station",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Queanbeyan council moved its monthly outdoor craft market to the railway station during repairs to its paving.",
+                  "full_content": "Queanbeyan council moved its monthly outdoor craft market to the railway station during repairs to its paving.",
+                  "url": "https://town.example/news/d19b489ead88"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A transient service error followed by a usable search should recover the exact event."
+    },
+    {
+      "id": "x32",
+      "split": "development",
+      "category": "retry",
+      "clue": "The council of Banyuwangi is providing a reading corner at its ferry terminal for schoolchildren.",
+      "expected": {
+        "urls": [
+          "https://idregional.example/news/5ab60c260925"
+        ],
+        "summary_facts": [
+          [
+            "ferry"
+          ],
+          [
+            "reading",
+            "library",
+            "books"
+          ],
+          [
+            "school",
+            "pupil",
+            "child",
+            "student"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "id"
+            ],
+            "query_any": [
+              "baca",
+              "perpustakaan",
+              "perpus",
+              "buku",
+              "literasi"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Pojok baca anak hadir di terminal feri Banyuwangi",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Pemkab Banyuwangi membuka pojok baca untuk anak sekolah di terminal feri agar mereka bisa membaca sambil menunggu keberangkatan.",
+                  "full_content": "Pemkab Banyuwangi membuka pojok baca untuk anak sekolah di terminal feri agar mereka bisa membaca sambil menunggu keberangkatan.",
+                  "url": "https://idregional.example/news/5ab60c260925"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The initial query produces no hits. The second Bahasa Indonesia query needs only robust headline vocabulary."
+    },
+    {
+      "id": "x33",
+      "split": "development",
+      "category": "retry",
+      "clue": "A town's school cafeteria started composting leftovers before the town's recycling centre opened to the public.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/755778e42aa6"
+        ],
+        "summary_facts": [
+          [
+            "compost"
+          ],
+          [
+            "school",
+            "cafeteria",
+            "canteen"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Council opens recycling centre with compost bins",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A nearby council opened a recycling centre and included bins for food waste at its opening.",
+                  "full_content": "A nearby council opened a recycling centre and included bins for food waste at its opening.",
+                  "url": "https://wire.example/news/77841c3b75ea"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "query_any": [
+              "cafeteria",
+              "school",
+              "leftovers",
+              "canteen",
+              "lunchroom"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "School launches cafeteria composting",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The school cafeteria started composting food before the town recycling centre opened to the public.",
+                  "full_content": "The school cafeteria started composting food before the town recycling centre opened to the public.",
+                  "url": "https://town.example/news/755778e42aa6"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A second query should refine by the school and chronology after a near match."
+    },
+    {
+      "id": "x34",
+      "split": "holdout",
+      "category": "retry",
+      "clue": "A Taipei bookmobile began delivering large-print paper books to passengers who cannot read electronic text on screen.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/e64e60e4e6e6"
+        ],
+        "summary_facts": [
+          [
+            "large-print",
+            "large print",
+            "large type",
+            "large-text",
+            "large text"
+          ],
+          [
+            "book",
+            "print"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "台北图书车新增电子阅读服务",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "台北图书车提供免费电子借阅服务，纸本图书的发行尚未开始。",
+                  "full_content": "台北图书车提供免费电子借阅服务，纸本图书的发行尚未开始。",
+                  "url": "https://zmetro.example/news/4c5f21d6c6e8"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ],
+            "query_any": [
+              "大字",
+              "紙本",
+              "纸本",
+              "纸质",
+              "書車",
+              "书车",
+              "書籍",
+              "书籍",
+              "字體",
+              "字体",
+              "圖書",
+              "图书"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "臺北巡迴書車增設大字版紙本借閱",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "臺北市巡迴書車即日起提供大字版紙本書籍，方便不易在螢幕上閱讀電子文字的乘客借閱。",
+                  "full_content": "臺北市巡迴書車即日起提供大字版紙本書籍，方便不易在螢幕上閱讀電子文字的乘客借閱。",
+                  "url": "https://ztrad.example/news/e64e60e4e6e6"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A similar electronic program is contradicted by the explicit paper requirement. A localized retry surfaces the exact report."
+    },
+    {
+      "id": "x35",
+      "split": "development",
+      "category": "retry",
+      "clue": "A rural library has turned its disused front steps into a ramp and opened the new entrance this morning.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": false,
+        "allow_no_success": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "code": 503,
+            "msg": "Search service unavailable"
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "code": 599,
+            "msg": "Search proxy could not connect"
+          }
+        }
+      ],
+      "rationale": "Both proxy attempts failed. A correct blank is allowed after the second failure with no successful search."
+    },
+    {
+      "id": "x36",
+      "split": "development",
+      "category": "ambiguity",
+      "clue": "A visiting theatre director and the county's arts coordinator agreed to offer weekend rehearsal slots to amateur groups.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/4b98866d43ed"
+        ],
+        "summary_facts": [
+          [
+            "weekend"
+          ],
+          [
+            "rehears"
+          ],
+          [
+            "amateur",
+            "community group"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "County agrees rehearsal arrangement with theatre director",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The director of the regional theatre and the county arts coordinator agreed to offer weekend rehearsal slots to amateur groups. A county spokesperson did not say whether the agreement happened online or in person.",
+                  "full_content": "The director of the regional theatre and the county arts coordinator agreed to offer weekend rehearsal slots to amateur groups. A county spokesperson did not say whether the agreement happened online or in person.",
+                  "url": "https://town.example/news/4b98866d43ed"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "County agrees rehearsal arrangement with theatre director",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The director of the regional theatre and the county arts coordinator agreed to offer weekend rehearsal slots to amateur groups. A county spokesperson did not say whether the agreement happened online or in person.",
+                  "full_content": "The director of the regional theatre and the county arts coordinator agreed to offer weekend rehearsal slots to amateur groups. A county spokesperson did not say whether the agreement happened online or in person.",
+                  "url": "https://town.example/news/4b98866d43ed"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The contact mode is incidental and unconfirmed. The parties, offer, and group independently identify the event."
+    },
+    {
+      "id": "x37",
+      "split": "development",
+      "category": "ambiguity",
+      "clue": "Representatives of a transport ministry and a city transit operator signed an agreement in person at the depot, rather than by video call.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Transit agreement signed on a video call",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Representatives of the transport ministry and the city transit operator signed a cooperation agreement during a video call. They were not together at the depot.",
+                  "full_content": "Representatives of the transport ministry and the city transit operator signed a cooperation agreement during a video call. They were not together at the depot.",
+                  "url": "https://rail.example/news/02972e180ef3"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Transit agreement signed on a video call",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Representatives of the transport ministry and the city transit operator signed a cooperation agreement during a video call. They were not together at the depot.",
+                  "full_content": "Representatives of the transport ministry and the city transit operator signed a cooperation agreement during a video call. They were not together at the depot.",
+                  "url": "https://rail.example/news/02972e180ef3"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Mode and place are explicit differentiators in this clue and contradicted by the article."
+    },
+    {
+      "id": "x38",
+      "split": "development",
+      "category": "ambiguity",
+      "clue": "A floating concert stage reopened after a short safety closure, according to a musical group's representative.",
+      "expected": {
+        "urls": [
+          "https://coast.example/news/935a079c4780"
+        ],
+        "summary_facts": [
+          [
+            "float",
+            "boat"
+          ],
+          [
+            "stage"
+          ],
+          [
+            "reopen",
+            "returned",
+            "returns",
+            "resumed"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Boat stage returns to service",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Following a brief safety closure, the floating concert stage reopened, a spokesperson for the orchestra confirmed.",
+                  "full_content": "Following a brief safety closure, the floating concert stage reopened, a spokesperson for the orchestra confirmed.",
+                  "url": "https://coast.example/news/935a079c4780"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Boat stage returns to service",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Following a brief safety closure, the floating concert stage reopened, a spokesperson for the orchestra confirmed.",
+                  "full_content": "Following a brief safety closure, the floating concert stage reopened, a spokesperson for the orchestra confirmed.",
+                  "url": "https://coast.example/news/935a079c4780"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Spokesperson and representative are compatible paraphrases. No actor, status, or location conflict exists."
+    },
+    {
+      "id": "x39",
+      "split": "holdout",
+      "category": "ambiguity",
+      "clue": "A city youth chess club replaced its playing clocks after a local foundation donated them directly to the club.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Foundation gives chess clocks to district schools",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The foundation donated playing clocks directly to district schools for a classroom program. The city youth club independently replaced its clocks with funds from members.",
+                  "full_content": "The foundation donated playing clocks directly to district schools for a classroom program. The city youth club independently replaced its clocks with funds from members.",
+                  "url": "https://town.example/news/5c1760e3aa23"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Foundation gives chess clocks to district schools",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The foundation donated playing clocks directly to district schools for a classroom program. The city youth club independently replaced its clocks with funds from members.",
+                  "full_content": "The foundation donated playing clocks directly to district schools for a classroom program. The city youth club independently replaced its clocks with funds from members.",
+                  "url": "https://town.example/news/5c1760e3aa23"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The club's change and the foundation's donation are separate transactions with different beneficiaries."
+    },
+    {
+      "id": "x40",
+      "split": "development",
+      "category": "ambiguity",
+      "clue": "A Selangor school district moved its sports day indoors because of haze rather than rain.",
+      "expected": {
+        "urls": [
+          "https://wire.example/news/06343e89ece7"
+        ],
+        "summary_facts": [
+          [
+            "haze",
+            "smog",
+            "air quality"
+          ],
+          [
+            "indoor"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Selangor schools hold sports day indoors after haze alert",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A Selangor district moved its sports day indoors after a haze alert, its superintendent said. Weather records showed no rainfall.",
+                  "full_content": "A Selangor district moved its sports day indoors after a haze alert, its superintendent said. Weather records showed no rainfall.",
+                  "url": "https://wire.example/news/06343e89ece7"
+                },
+                {
+                  "title": "Sekolah pindah hari olahraga karena hujan",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Sekolah di distrik lain memindahkannya ke dalam ruangan karena hujan.",
+                  "full_content": "Sekolah di distrik lain memindahkannya ke dalam ruangan karena hujan.",
+                  "url": "https://idregional.example/news/faae9a4e1455"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "en"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Selangor schools hold sports day indoors after haze alert",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A Selangor district moved its sports day indoors after a haze alert, its superintendent said. Weather records showed no rainfall.",
+                  "full_content": "A Selangor district moved its sports day indoors after a haze alert, its superintendent said. Weather records showed no rainfall.",
+                  "url": "https://wire.example/news/06343e89ece7"
+                },
+                {
+                  "title": "Sekolah pindah hari olahraga karena hujan",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Sekolah di distrik lain memindahkannya ke dalam ruangan karena hujan.",
+                  "full_content": "Sekolah di distrik lain memindahkannya ke dalam ruangan karena hujan.",
+                  "url": "https://idregional.example/news/faae9a4e1455"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Malaysia is distinct from Indonesia, and the explicit cause must be correct."
+    },
+    {
+      "id": "x41",
+      "split": "development",
+      "category": "subject_isolation",
+      "clue": "A water taxi serving a small estuary town added a midday stop next to the town museum.",
+      "expected": {
+        "urls": [
+          "https://coast.example/news/38b763487557"
+        ],
+        "summary_facts": [
+          [
+            "water taxi",
+            "ferry"
+          ],
+          [
+            "museum"
+          ],
+          [
+            "midday",
+            "noon",
+            "lunchtime"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Two towns adjust estuary transport schedules",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                  "full_content": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                  "url": "https://wire.example/news/4e7bed14e542"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Estuary transport changes",
+                  "summary": "Water taxi and bus timetable changes include lunchtime museum access.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Water taxi serves town museum at lunchtime",
+                    "language": "en",
+                    "authors": [
+                      "Coast Gazette"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "The small estuary town's water taxi added a midday stop next to the town museum.",
+                    "full_content": "The small estuary town's water taxi added a midday stop next to the town museum.",
+                    "url": "https://coast.example/news/38b763487557"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Two towns adjust estuary transport schedules",
+                      "language": "en",
+                      "authors": [
+                        "Regional Wire"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                      "full_content": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                      "url": "https://wire.example/news/4e7bed14e542"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Two towns adjust estuary transport schedules",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                  "full_content": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                  "url": "https://wire.example/news/4e7bed14e542"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Estuary transport changes",
+                  "summary": "Water taxi and bus timetable changes include lunchtime museum access.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Water taxi serves town museum at lunchtime",
+                    "language": "en",
+                    "authors": [
+                      "Coast Gazette"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "The small estuary town's water taxi added a midday stop next to the town museum.",
+                    "full_content": "The small estuary town's water taxi added a midday stop next to the town museum.",
+                    "url": "https://coast.example/news/38b763487557"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Two towns adjust estuary transport schedules",
+                      "language": "en",
+                      "authors": [
+                        "Regional Wire"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                      "full_content": "The region's two towns released revised boat and bus timetables. The new bus posts mention museum access.",
+                      "url": "https://wire.example/news/4e7bed14e542"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": "A group can aid discovery. The article nested in it independently proves the clue."
+    },
+    {
+      "id": "x42",
+      "split": "development",
+      "category": "subject_isolation",
+      "clue": "An air museum opened the eastern hangar on Saturdays for families before finishing repairs to its runway.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Air museum repairs hangar and runway",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                  "full_content": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                  "url": "https://town.example/news/fdc939cb445f"
+                },
+                {
+                  "title": "Air museum hangar safety survey",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                  "full_content": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                  "url": "https://wire.example/news/9cbfec4e1db1"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Air museum accessibility",
+                  "summary": "Families can visit a hangar on Saturday ahead of runway works.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Air museum repairs hangar and runway",
+                    "language": "en",
+                    "authors": [
+                      "Town Press"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                    "full_content": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                    "url": "https://town.example/news/fdc939cb445f"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Air museum hangar safety survey",
+                      "language": "en",
+                      "authors": [
+                        "Regional Wire"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                      "full_content": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                      "url": "https://wire.example/news/9cbfec4e1db1"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Air museum repairs hangar and runway",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                  "full_content": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                  "url": "https://town.example/news/fdc939cb445f"
+                },
+                {
+                  "title": "Air museum hangar safety survey",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                  "full_content": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                  "url": "https://wire.example/news/9cbfec4e1db1"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Air museum accessibility",
+                  "summary": "Families can visit a hangar on Saturday ahead of runway works.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Air museum repairs hangar and runway",
+                    "language": "en",
+                    "authors": [
+                      "Town Press"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                    "full_content": "The eastern hangar is being repaired. Families can visit the western hangar on Saturdays, and runway work is not finished.",
+                    "url": "https://town.example/news/fdc939cb445f"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Air museum hangar safety survey",
+                      "language": "en",
+                      "authors": [
+                        "Regional Wire"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                      "full_content": "An inspector surveyed the eastern hangar and recommended keeping it closed to visitors.",
+                      "url": "https://wire.example/news/9cbfec4e1db1"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": "The group synopsis combines locations incorrectly. Neither article verifies eastern-hangar reopening."
+    },
+    {
+      "id": "x43",
+      "split": "holdout",
+      "category": "subject_isolation",
+      "clue": "Eleven stalls at the Taipei wholesale night market got new lockable displays supplied by its merchants' association.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/863af7372632"
+        ],
+        "summary_facts": [
+          [
+            "eleven",
+            "11"
+          ],
+          [
+            "lock"
+          ],
+          [
+            "display",
+            "case",
+            "cabinet"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "台北批发市场完成通道维护",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                  "full_content": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                  "url": "https://zmetro.example/news/25194ef826da"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "夜市設備更新消息",
+                  "summary": "市場通道維護與攤位展示櫃換裝同日進行。",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "台北批发市场完成通道维护",
+                    "language": "zh",
+                    "authors": [
+                      "城市日报"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                    "full_content": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                    "url": "https://zmetro.example/news/25194ef826da"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "批發夜市十一攤換裝可上鎖展示櫃",
+                      "language": "zh",
+                      "authors": [
+                        "島嶼日報"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "台北批發夜市商販協會供應可上鎖展示櫃，十一個攤位全數換裝。",
+                      "full_content": "台北批發夜市商販協會供應可上鎖展示櫃，十一個攤位全數換裝。",
+                      "url": "https://ztrad.example/news/863af7372632"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "台北批发市场完成通道维护",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                  "full_content": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                  "url": "https://zmetro.example/news/25194ef826da"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "夜市設備更新消息",
+                  "summary": "市場通道維護與攤位展示櫃換裝同日進行。",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "台北批发市场完成通道维护",
+                    "language": "zh",
+                    "authors": [
+                      "城市日报"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                    "full_content": "台北批发市场完成通道维护，市场协会另公布摊位设施更换计划。",
+                    "url": "https://zmetro.example/news/25194ef826da"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "批發夜市十一攤換裝可上鎖展示櫃",
+                      "language": "zh",
+                      "authors": [
+                        "島嶼日報"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "台北批發夜市商販協會供應可上鎖展示櫃，十一個攤位全數換裝。",
+                      "full_content": "台北批發夜市商販協會供應可上鎖展示櫃，十一個攤位全數換裝。",
+                      "url": "https://ztrad.example/news/863af7372632"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": "The group top article is nearby news. A subarticle confirms the source, affected stalls, and display type."
+    },
+    {
+      "id": "x44",
+      "split": "development",
+      "category": "subject_isolation",
+      "clue": "Semarang's trade office approved morning permits for traders outside a market arch before the lantern parade.",
+      "expected": {
+        "urls": [
+          "https://idmetro.example/news/e36630151581"
+        ],
+        "summary_facts": [
+          [
+            "morning"
+          ],
+          [
+            "permit",
+            "permission",
+            "licen"
+          ],
+          [
+            "parade",
+            "lantern"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dinas perdagangan Semarang terbitkan izin pagi untuk pasar",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                  "full_content": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                  "url": "https://idmetro.example/news/e36630151581"
+                },
+                {
+                  "title": "Pengelola pasar siapkan jadwal pedagang malam",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                  "full_content": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                  "url": "https://idregional.example/news/102d68feef63"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Jadwal pasar",
+                  "summary": "Ada jadwal khusus bagi pedagang saat pawai.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Dinas perdagangan Semarang terbitkan izin pagi untuk pasar",
+                    "language": "id",
+                    "authors": [
+                      "Kabar Kota"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                    "full_content": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                    "url": "https://idmetro.example/news/e36630151581"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Pengelola pasar siapkan jadwal pedagang malam",
+                      "language": "id",
+                      "authors": [
+                        "Warta Daerah"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                      "full_content": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                      "url": "https://idregional.example/news/102d68feef63"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "id"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Dinas perdagangan Semarang terbitkan izin pagi untuk pasar",
+                  "language": "id",
+                  "authors": [
+                    "Kabar Kota"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                  "full_content": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                  "url": "https://idmetro.example/news/e36630151581"
+                },
+                {
+                  "title": "Pengelola pasar siapkan jadwal pedagang malam",
+                  "language": "id",
+                  "authors": [
+                    "Warta Daerah"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                  "full_content": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                  "url": "https://idregional.example/news/102d68feef63"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Jadwal pasar",
+                  "summary": "Ada jadwal khusus bagi pedagang saat pawai.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Dinas perdagangan Semarang terbitkan izin pagi untuk pasar",
+                    "language": "id",
+                    "authors": [
+                      "Kabar Kota"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                    "full_content": "Dinas perdagangan Semarang menyetujui izin pagi untuk pedagang di luar gapura pasar sebelum pawai lampion.",
+                    "url": "https://idmetro.example/news/e36630151581"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Pengelola pasar siapkan jadwal pedagang malam",
+                      "language": "id",
+                      "authors": [
+                        "Warta Daerah"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                      "full_content": "Pengelola pasar akan membahas jam malam untuk pedagang setelah arak-arakan lampion.",
+                      "url": "https://idregional.example/news/102d68feef63"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": "Duplicate appearances of the report in results and group metadata are one underlying source, which verifies all details."
+    },
+    {
+      "id": "x45",
+      "split": "holdout",
+      "category": "subject_isolation",
+      "clue": "The town library has started lending bicycle repair stands to individual residents, in addition to lending tools.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Library continues lending bicycle tools",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                  "full_content": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                  "url": "https://town.example/news/1b9c521a9af3"
+                },
+                {
+                  "title": "Bicycle repair stands placed at two rail stations",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                  "full_content": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                  "url": "https://rail.example/news/a20987de317a"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Bicycle repair support for residents",
+                  "summary": "Local organisations offer new tools and repair stands.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Bicycle repair stands placed at two rail stations",
+                    "language": "en",
+                    "authors": [
+                      "Rail Bulletin"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                    "full_content": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                    "url": "https://rail.example/news/a20987de317a"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Library continues lending bicycle tools",
+                      "language": "en",
+                      "authors": [
+                        "Town Press"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                      "full_content": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                      "url": "https://town.example/news/1b9c521a9af3"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Library continues lending bicycle tools",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                  "full_content": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                  "url": "https://town.example/news/1b9c521a9af3"
+                },
+                {
+                  "title": "Bicycle repair stands placed at two rail stations",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                  "full_content": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                  "url": "https://rail.example/news/a20987de317a"
+                }
+              ],
+              "subjects": [
+                {
+                  "name": "Bicycle repair support for residents",
+                  "summary": "Local organisations offer new tools and repair stands.",
+                  "time_start": null,
+                  "top_news": {
+                    "title": "Bicycle repair stands placed at two rail stations",
+                    "language": "en",
+                    "authors": [
+                      "Rail Bulletin"
+                    ],
+                    "published_age_minutes": 80,
+                    "highlight": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                    "full_content": "A railway installed bicycle repair stands at stations. The equipment stays at the stations and is not available for borrowing.",
+                    "url": "https://rail.example/news/a20987de317a"
+                  },
+                  "sub_news": [
+                    {
+                      "title": "Library continues lending bicycle tools",
+                      "language": "en",
+                      "authors": [
+                        "Town Press"
+                      ],
+                      "published_age_minutes": 80,
+                      "highlight": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                      "full_content": "The town library lends bicycle tools to individual residents and has no repair stands in its collection.",
+                      "url": "https://town.example/news/1b9c521a9af3"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "rationale": "Two separate items cannot establish that the library lends the stands. Both report facts incompatible with that claim."
+    },
+    {
+      "id": "x46",
+      "split": "development",
+      "category": "event_status",
+      "clue": "A municipal swimming ban has already been lifted at the northern beach.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Northern beach ban could end after samples",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Officials expect to lift the swimming ban at the northern beach after tomorrow's samples arrive. The ban remains in force today.",
+                  "full_content": "Officials expect to lift the swimming ban at the northern beach after tomorrow's samples arrive. The ban remains in force today.",
+                  "url": "https://coast.example/news/85dff8c77534"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Northern beach ban could end after samples",
+                  "language": "en",
+                  "authors": [
+                    "Coast Gazette"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Officials expect to lift the swimming ban at the northern beach after tomorrow's samples arrive. The ban remains in force today.",
+                  "full_content": "Officials expect to lift the swimming ban at the northern beach after tomorrow's samples arrive. The ban remains in force today.",
+                  "url": "https://coast.example/news/85dff8c77534"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Expecting to lift a ban is different from lifting it."
+    },
+    {
+      "id": "x47",
+      "split": "development",
+      "category": "event_status",
+      "clue": "The county board approved a proposal to add a platform to the eastbound station next spring.",
+      "expected": {
+        "urls": [
+          "https://rail.example/news/5b4900b22327"
+        ],
+        "summary_facts": [
+          [
+            "approv",
+            "voted"
+          ],
+          [
+            "platform"
+          ],
+          [
+            "spring"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Board approves spring project at eastbound station",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The county board approved plans to add a platform to the eastbound station next spring. Construction has not begun.",
+                  "full_content": "The county board approved plans to add a platform to the eastbound station next spring. Construction has not begun.",
+                  "url": "https://rail.example/news/5b4900b22327"
+                },
+                {
+                  "title": "Eastbound station already opens a new platform",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "An eastbound station in a neighbouring county opened its new platform this week.",
+                  "full_content": "An eastbound station in a neighbouring county opened its new platform this week.",
+                  "url": "https://wire.example/news/b9a033455c82"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Board approves spring project at eastbound station",
+                  "language": "en",
+                  "authors": [
+                    "Rail Bulletin"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The county board approved plans to add a platform to the eastbound station next spring. Construction has not begun.",
+                  "full_content": "The county board approved plans to add a platform to the eastbound station next spring. Construction has not begun.",
+                  "url": "https://rail.example/news/5b4900b22327"
+                },
+                {
+                  "title": "Eastbound station already opens a new platform",
+                  "language": "en",
+                  "authors": [
+                    "Regional Wire"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "An eastbound station in a neighbouring county opened its new platform this week.",
+                  "full_content": "An eastbound station in a neighbouring county opened its new platform this week.",
+                  "url": "https://wire.example/news/b9a033455c82"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "The clue requires a completed approval, not completed construction. The other station's completion is unrelated."
+    },
+    {
+      "id": "x48",
+      "split": "holdout",
+      "category": "event_status",
+      "clue": "A public art group in Hsinchu funded a temporary display and says its winter exhibition will finish on February 3.",
+      "expected": {
+        "urls": [
+          "https://ztrad.example/news/fd92d67bc04f"
+        ],
+        "summary_facts": [
+          [
+            "february 3",
+            "3 february",
+            "feb. 3",
+            "feb 3"
+          ],
+          [
+            "exhibit"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "新竹冬季展览拟于二月中旬闭幕",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新竹另一处冬季展览暂定在二月中旬结束，展期未得到主办方确认。",
+                  "full_content": "新竹另一处冬季展览暂定在二月中旬结束，展期未得到主办方确认。",
+                  "url": "https://zmetro.example/news/05d97096288d"
+                },
+                {
+                  "title": "新竹冬季公共藝術展明年二月三日閉幕",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新竹公共藝術團體出資設置臨時展品，主辦方確定冬季展覽將於二月三日閉幕。",
+                  "full_content": "新竹公共藝術團體出資設置臨時展品，主辦方確定冬季展覽將於二月三日閉幕。",
+                  "url": "https://ztrad.example/news/fd92d67bc04f"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {
+            "language": [
+              "zh"
+            ]
+          },
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "新竹冬季展览拟于二月中旬闭幕",
+                  "language": "zh",
+                  "authors": [
+                    "城市日报"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新竹另一处冬季展览暂定在二月中旬结束，展期未得到主办方确认。",
+                  "full_content": "新竹另一处冬季展览暂定在二月中旬结束，展期未得到主办方确认。",
+                  "url": "https://zmetro.example/news/05d97096288d"
+                },
+                {
+                  "title": "新竹冬季公共藝術展明年二月三日閉幕",
+                  "language": "zh",
+                  "authors": [
+                    "島嶼日報"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "新竹公共藝術團體出資設置臨時展品，主辦方確定冬季展覽將於二月三日閉幕。",
+                  "full_content": "新竹公共藝術團體出資設置臨時展品，主辦方確定冬季展覽將於二月三日閉幕。",
+                  "url": "https://ztrad.example/news/fd92d67bc04f"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A dated announcement about an upcoming closure is a published event. The tentative and differently timed notice is not a match."
+    },
+    {
+      "id": "x49",
+      "split": "development",
+      "category": "event_status",
+      "clue": "A forest board's new map shows two trails that were permanently rerouted before the storm arrived.",
+      "expected": {
+        "urls": [],
+        "summary_facts": [],
+        "fake": true
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Forest board publishes temporary detours after storm",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Two trail detours are temporary and went into effect after damage from the storm. The newly published map includes both detours.",
+                  "full_content": "Two trail detours are temporary and went into effect after damage from the storm. The newly published map includes both detours.",
+                  "url": "https://town.example/news/83a979c24c0c"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Forest board publishes temporary detours after storm",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "Two trail detours are temporary and went into effect after damage from the storm. The newly published map includes both detours.",
+                  "full_content": "Two trail detours are temporary and went into effect after damage from the storm. The newly published map includes both detours.",
+                  "url": "https://town.example/news/83a979c24c0c"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "Both permanence and before-versus-after are explicit outcome contradictions."
+    },
+    {
+      "id": "x50",
+      "split": "development",
+      "category": "event_status",
+      "clue": "A rural craft fair held one final public session on Saturday before closing for a month of renovations.",
+      "expected": {
+        "urls": [
+          "https://town.example/news/86ff4a8bcdd6"
+        ],
+        "summary_facts": [
+          [
+            "saturday"
+          ],
+          [
+            "month"
+          ],
+          [
+            "renovat",
+            "repair",
+            "refurbish"
+          ]
+        ],
+        "fake": false
+      },
+      "searches": [
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Craft fair pauses after last public session",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The rural craft fair held a final public session on Saturday then paused for a month while its hall is being renovated.",
+                  "full_content": "The rural craft fair held a final public session on Saturday then paused for a month while its hall is being renovated.",
+                  "url": "https://town.example/news/86ff4a8bcdd6"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        },
+        {
+          "match": {},
+          "response": {
+            "data": {
+              "results": [
+                {
+                  "title": "Craft fair pauses after last public session",
+                  "language": "en",
+                  "authors": [
+                    "Town Press"
+                  ],
+                  "published_age_minutes": 80,
+                  "highlight": "The rural craft fair held a final public session on Saturday then paused for a month while its hall is being renovated.",
+                  "full_content": "The rural craft fair held a final public session on Saturday then paused for a month while its hall is being renovated.",
+                  "url": "https://town.example/news/86ff4a8bcdd6"
+                }
+              ],
+              "subjects": []
+            }
+          }
+        }
+      ],
+      "rationale": "A straightforward dated control verifies both completed stages and the length of the closure."
+    }
+  ]
+}

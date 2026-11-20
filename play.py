@@ -126,6 +126,7 @@ class Card:
     refused: int = 0  # calls refused by the search budget
     search_times: list[dict] = field(default_factory=list)  # [{"t": secs since start, "ok": bool}]
     error: str = ""
+    codex_startup_secs: float | None = None
 
 
 def codex_command(workdir: str, out_file: str, run_log: str) -> list[str]:
@@ -137,6 +138,7 @@ def codex_command(workdir: str, out_file: str, run_log: str) -> list[str]:
         "--ignore-user-config",  # your personal Codex config can't add other tools
         "--sandbox", "read-only",
         "--color", "never",
+        "--json",
         "--cd", workdir,
         "--output-schema", str(SCHEMA_FILE),
         "--output-last-message", out_file,
@@ -160,50 +162,117 @@ def codex_command(workdir: str, out_file: str, run_log: str) -> list[str]:
     return cmd
 
 
+def _read_codex_events(read_fd: int, launched: float, startup: list[float], stop: threading.Event, verbose: bool) -> None:
+    with os.fdopen(read_fd, encoding="utf-8", errors="replace") as events:
+        for line in events:
+            received = time.monotonic()
+            if stop.is_set():
+                break
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            if not isinstance(event, dict):
+                continue
+            kind = event.get("type")
+            if kind == "thread.started" and not startup:
+                startup.append(round(received - launched, 3))
+            if verbose:
+                item = event.get("item") or {}
+                if kind == "item.completed" and item.get("type") in ("agent_message", "reasoning"):
+                    print(item.get("text", ""), file=sys.stderr, flush=True)
+                elif kind == "item.started" and item.get("type") == "mcp_tool_call":
+                    print(f"tool {item.get('server')}.{item.get('tool')}", file=sys.stderr, flush=True)
+                elif kind == "error":
+                    print(event.get("message", "Codex error"), file=sys.stderr, flush=True)
+
+
+def _run_codex(command: list[str], prompt: str, timeout: float, card: Card, verbose: bool) -> None:
+    # Give the stdout reader its own pipe so communicate can still manage stdin,
+    # stderr, and the process timeout on both Windows and Unix.
+    read_fd, write_fd = os.pipe()
+    try:
+        with os.fdopen(write_fd, "wb") as output:
+            launched = time.monotonic()
+            proc = subprocess.Popen(
+                command,
+                stdin=subprocess.PIPE,
+                stdout=output,
+                stderr=None if verbose else subprocess.PIPE,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                start_new_session=True,
+            )
+    except OSError:
+        os.close(read_fd)
+        raise
+    startup: list[float] = []
+    stop_reading = threading.Event()
+    reader = threading.Thread(target=_read_codex_events, args=(read_fd, launched, startup, stop_reading, verbose), daemon=True)
+    reader.start()
+    try:
+        with proc:
+            try:
+                _, err = proc.communicate(prompt, timeout=timeout)
+                if proc.returncode != 0:
+                    card.error = f"codex exited {proc.returncode}: {(err or '').strip()[-300:]}"
+            except subprocess.TimeoutExpired:
+                kill(proc)
+                card.error = f"timed out after {timeout:.0f}s"
+    finally:
+        # A detached child can still hold stdout open after Codex exits.
+        reader.join(timeout=0.05)
+        stop_reading.set()
+        card.codex_startup_secs = startup[0] if startup else None
+
+
 def run_agent(clue: str, timeout: float = GAME_TIMEOUT, verbose: bool = False) -> Card:
-    """Run Codex on one clue and return its card. Never raises."""
+    """Run Codex on one clue and return its card."""
     started = time.time()
-    workdir = tempfile.mkdtemp(prefix="scoop-")  # empty dir: no AGENTS.md, nothing to read
-    out_file = os.path.join(workdir, "card.json")
-    run_log = os.path.join(workdir, "searches.jsonl")
-    prompt = PROMPT_FILE.read_text(encoding="utf-8").strip() + f"\n\nClue: {clue}\n"
+    clock_started = time.monotonic()
     card = Card()
-    try:
-        proc = subprocess.Popen(
-            codex_command(workdir, out_file, run_log),
-            stdin=subprocess.PIPE,
-            stdout=None if verbose else subprocess.DEVNULL,
-            stderr=None if verbose else subprocess.PIPE,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            start_new_session=True,
-        )
-    except FileNotFoundError:
-        card.error = "codex not found. Install it: npm install -g @openai/codex"
-        return card
-    try:
-        _, err = proc.communicate(prompt, timeout=timeout)
-        if proc.returncode != 0:
-            card.error = f"codex exited {proc.returncode}: {(err or '').strip()[-300:]}"
-    except subprocess.TimeoutExpired:
-        kill(proc)
-        card.error = f"timed out after {timeout:.0f}s"
-    card.seconds = time.time() - started
-    if os.path.exists(run_log):
-        with open(run_log, encoding="utf-8") as f:
-            calls = [json.loads(line) for line in f if line.strip()]
-        card.searches = [octen_client.label(c.get("api", "news-search"), c["query"]) for c in calls if c.get("status") == 200 and not c.get("code")]
-        card.search_times = [{"t": round(c["t"] - started, 1), "ok": c.get("status") == 200 and not c.get("code"), "refused": c.get("status") == 429 or c.get("code") == 429, "q": c["query"][:80]} for c in calls]
-        card.refused = sum(c.get("status") == 429 for c in calls)
-    if os.path.exists(out_file):
+    with tempfile.TemporaryDirectory(prefix="scoop-") as workdir:
+        out_file = os.path.join(workdir, "card.json")
+        run_log = os.path.join(workdir, "searches.jsonl")
+        prompt = PROMPT_FILE.read_text(encoding="utf-8").strip() + f"\n\nClue: {clue}\n"
         try:
-            data = json.loads(Path(out_file).read_text(encoding="utf-8"))
-            card.url = (data.get("url") or "").strip()
-            card.summary = (data.get("summary") or "").strip()
-        except (json.JSONDecodeError, AttributeError):
-            card.error = card.error or "agent's final answer was not a JSON card"
-    shutil.rmtree(workdir, ignore_errors=True)
+            _run_codex(codex_command(workdir, out_file, run_log), prompt, timeout, card, verbose)
+        except FileNotFoundError:
+            card.error = "codex not found. Install it: npm install -g @openai/codex"
+        card.seconds = time.monotonic() - clock_started
+        if os.path.exists(run_log):
+            calls = []
+            with open(run_log, encoding="utf-8", errors="replace") as f:
+                for line in f:
+                    try:
+                        calls.append(json.loads(line))
+                    except json.JSONDecodeError:
+                        continue  # A timeout can interrupt the final log write.
+            for call in calls:
+                status = call.get("status")
+                code = call.get("code")
+                ok = status == 200 and not code
+                finished = call["t"] - started
+                duration = call.get("secs")
+                if ok:
+                    card.searches.append(octen_client.label(call.get("api", "news-search"), call["query"]))
+                card.search_times.append({
+                    "t": round(finished, 1),
+                    "started": round(max(0, finished - duration), 3) if duration is not None else None,
+                    "duration": duration,
+                    "ok": ok,
+                    "refused": status == 429 or code == 429,
+                    "q": call["query"][:80],
+                })
+            card.refused = sum(call.get("status") == 429 for call in calls)
+        if os.path.exists(out_file):
+            try:
+                data = json.loads(Path(out_file).read_text(encoding="utf-8"))
+                card.url = (data.get("url") or "").strip()
+                card.summary = (data.get("summary") or "").strip()
+            except (json.JSONDecodeError, AttributeError):
+                card.error = card.error or "agent's final answer was not a JSON card"
     return card
 
 
@@ -225,6 +294,8 @@ def print_card(card: Card) -> None:
     print(f"  summary:  {card.summary or '(none)'}")
     print(f"  searches: {len(card.searches)}  {'; '.join(card.searches)[:150]}")
     print(f"  time:     {card.seconds:.1f}s" + (f"   error: {card.error}" if card.error else ""))
+    if card.codex_startup_secs is not None:
+        print(f"  Codex launch to thread start: {card.codex_startup_secs:.3f}s")
 
 
 # --- answer checking (practice) ------------------------------------------------------
@@ -418,6 +489,7 @@ def cmd_eval(args) -> None:
             "secs": round(card.seconds, 1), "searches": card.searches, "url": card.url, "summary": card.summary,
             "reason": j["reason"], "error": card.error, "house": c.get("house"), "story": (c.get("key") or {}).get("story"), "key_size": len((c.get("key") or {}).get("articles") or []), "key": [{"url": k.get("url"), "title": k.get("title"), "time": k.get("time_published")} for k in ((c.get("key") or {}).get("articles") or [])[:6]], "in_key": bool(j.get("in_key")),
             "refused": card.refused, "fake": bool(c.get("fake")), "search_times": card.search_times,
+            "codex_startup_secs": card.codex_startup_secs,
         }
 
     with ThreadPoolExecutor(max(1, args.parallel)) as ex:
