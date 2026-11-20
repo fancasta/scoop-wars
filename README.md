@@ -1,148 +1,58 @@
-# Scoop Wars starter kit
+# Scoop Wars
 
-This is the house agent: Codex plus Octen News Search, with a plain prompt. It plays every clue in the Scoop clock too. Your job is to beat it.
+Give the agent a clue with the headline and names stripped out. It has 45 seconds and two searches to find the original news story. Sometimes the clue changes one fact, and the winning move is to leave the card blank.
 
-Each clue describes a story published in the last few hours, without the names or words in its headline. Your agent has 45 seconds to answer with a **card**: the URL of one article that reports the story, and a one-sentence English summary.
+I adapted the organizers’ Codex agent to search in English, Chinese, and Indonesian, check the article behind a promising headline, and decide when the evidence warrants a link. On the same 15 practice clues, the starter earned **+10 points**. My version earned **+40, +40, and +38** in its final three runs, with **zero wrong links**. Its best recorded run got **15/15** in **14.1 seconds per clue at the median**.
 
-## Tonight's checklist
+[![Scoop Wars evaluation dashboard showing 15 of 15 correct, +44 estimated points, 8 of 8 house misses recovered and a 14-second median](docs/images/practice-dashboard.jpg)](docs/images/practice-dashboard.jpg)
 
-The **event page** walks you through all of this one step at a time: join the venue Wi-Fi and open the address on the big screen. Claim your credits there first: it also shows your team (teams of 2 to 3, made by the organizers) and lets you name it. This is the same list, for you or your coding agent.
+*The organizers’ dashboard replaying the best run on November 18, 2026. Each dot marks a search. The run history on the right includes the three later repeats.*
 
-Using a coding agent? Paste this in. It runs the terminal steps and asks you for the rest.
+## What changed in practice
 
-```text
-Set me up for Scoop Wars: follow "Tonight's checklist" in https://github.com/derekzaw-007/scoop-wars. Run the terminal steps yourself. Ask me for anything only I can do: Wi-Fi, the event page, logins, keys.
-```
+All five runs below used the same organizer-provided clues and four concurrent workers. A correct answer means either a verified article or an intentionally empty card on a fake clue. Points are the practice scorer’s estimate under the game rules.
 
-- [ ] **Create an Octen API key** on the [Octen API Platform](https://octen.ai/platform), with the account that redeemed the Octen credits.
-- [ ] **Install uv, Node.js and Codex,** then log in to Codex with ChatGPT Pro.
-  ```bash
-  curl -LsSf https://astral.sh/uv/install.sh | sh   # Windows (PowerShell): powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-  npm install -g @openai/codex
-  codex login
-  ```
-- [ ] **Get the starter kit.** Your team shares one copy: one of you forks this repo and adds the others as collaborators, and everyone clones the fork. On your own, just clone it.
-  ```bash
-  git clone https://github.com/derekzaw-007/scoop-wars.git && cd scoop-wars   # or your team's fork
-  cp .env.example .env
-  ```
-- [ ] **Fill in `.env`:** copy the three lines from the event page (step 7) and put your key in `OCTEN_API_KEY`. `SCOOP_SERVER` is the event page's address; `SCOOP_TOKEN` is your team's, the same for everyone on it.
-- [ ] **Check your setup:** `uv run play.py doctor`. Every line should say `[ok]`, including your team's name.
-- [ ] **Build.** Run `uv run play.py ui` and beat the house agent on the practice clues. Start with [where the points are](#where-the-points-are).
-- [ ] **By 8:25 PM, one laptop per team runs `uv run play.py play`** and leaves it running. Hands off the keyboard from 8:30.
+| November 18 practice run | Correct | Points | Wrong links | Successful searches | Median answer |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Starter | 8/15 | +10 | 5 | 30 | 14.4 s |
+| Best recorded run | **15/15** | **+44** | 0 | 21 | **14.1 s** |
+| Repeat 1 | 14/15 | +40 | 0 | 22 | 16.3 s |
+| Repeat 2 | 14/15 | +40 | 0 | 23 | 16.7 s |
+| Repeat 3 | 13/15 | +38 | 0 | 24 | 16.3 s |
 
-No uv? `pip install mcp httpx`, then use `python play.py` instead of `uv run play.py`.
+The revision found all seven required local-language articles and correctly declined both fake clues in each of the four runs shown. The art-auction clue drew a blank in all three repeats. The Ontario strike clue drew a blank in the last one. Live search and model output varied between runs.
 
-## Commands
+[Download the Excel audit with all 75 case results and submitted article links](outputs/showcase/practice-results.xlsx)
 
-| Command | What it does |
-|---|---|
-| `uv run play.py doctor` | Checks Python, Codex and its login, your keys, the game server, your team and a live News Search call |
-| `uv run play.py join "Team"` | Registers a new team. Only if the help desk asks: your team and its `SCOOP_TOKEN` come from the event page. |
-| `uv run play.py ask "clue"` | Runs the agent on any clue you write. Add `-v` to watch Codex work. |
-| `uv run play.py eval` | Runs every practice clue, 4 at a time, and scores them the way the game does |
-| `uv run play.py eval --compare` | The same, plus what changed since your last eval |
-| `uv run play.py ui` | The eval as a live dashboard in your browser, with your run history |
-| `uv run play.py play` | Joins the Scoop clock. Start it by 8:25 PM, then hands off the keyboard. |
+## Four clues, four decisions
 
-## Where the points are
+These are cards from the +44 run. For articles outside the organizers’ answer key, the practice judge checked the event, publication window, and English summary.
 
-The house agent finds most plain clues in about 15 seconds. You won't beat it by finding the same stories the same way.
+| Clue | What the agent did | Result |
+| --- | --- | --- |
+| Singapore chip controls | The starter found the right meeting in English and lost points on the language rule. The revision returned 8world’s Chinese report on Josephine Teo and Jeffrey Kessler discussing how Singapore firms could retain access to AI chips. [8world](https://www.8world.com/singapore/josephine-teo-meeting-us-official-jeffrey-kessler-3344116) | +4 · 2 searches · 26.3 s |
+| Ambulance struck overnight | The clue gave the driver’s age and omitted the country. After an English search, a Chinese retry found the Fengshan crash and the transfer of the patient to a second ambulance. The judge accepted the article. [Mirror Daily](https://www.mirrordaily.news/story/98582) | +4 · 2 searches · 20.3 s |
+| Counterfeit notes at a coffee stall | The agent matched the **Rp100,000 denomination** and the two officers posing as buyers. Its English card linked to the Indonesian report in the answer key. [Kompas](https://surabaya.kompas.com/read/2026/11/18/062445778/sopir-travel-di-trenggalek-beli-uang-palsu-rp-13-juta-terjebak-polisi-yang) | +2 · 1 search · 14.1 s |
+| Altered shingles-vaccine claim | The starter submitted a link and scored −2. The revision made the required search, then left both the URL and summary empty. The scorer awarded full credit for the fake. | +2 · 1 search · 12.1 s |
 
-| You | Points |
-|---|---|
-| Right on a clue the house agent missed | 4 |
-| Right, and your card came in before the house agent's | 2 |
-| Right, but after the house agent | 1 |
-| Wrong | minus 2 |
-| No answer | 0 |
-| **Fake clue** (describes something that didn't happen): blank card | 2 |
-| **Fake clue**: any link | minus 2 |
+## My contribution
 
-Plus 2 for linking the story's first report, and some edge cases: see [scoring details](#scoring-details).
+- **Search routing.** The first query uses country and language cues in the clue. When an English search finds no lead on a local incident, the agent can spend its last call on native terms. [Agent prompt](prompt.md)
+- **Article verification.** The search tool checks publication timestamps on individual and grouped results. It can return text from up to four distinct articles to verify details missing from a headline. [News Search tool](news_search_mcp.py)
+- **Measurement and testing.** I added timing from Codex launch to thread creation, per-search timings, and a 50-case benchmark with authored evidence and a held-out split. The final version passed **48/50 automatically** and **49/50 after review**. The scorer missed a valid currency notation. The remaining miss was a cafeteria story for which the agent retried in Chinese and returned an empty card. [Benchmark runner](tests/expanded_practice.py) · [Evaluation notes](CONTEXT.md)
 
-Five ways to beat the house agent:
+The original CLI, dashboard, and game scoring come from the organizers. Hieu’s parallel-search implementation provided a comparison for fuller article retrieval. This fork keeps the second call available for a follow-up informed by the first result. [Starter kit](https://github.com/derekzaw-007/scoop-wars) · [Hieu’s reference revision](https://github.com/daongochieu2810/scoop-wars/commit/1f2bdb226b1c8660b8b1acf06b8a89717e11d118)
 
-- **Find what it misses.** Those clues are worth 4.
-- **Answer local clues in the local language.** Some clues are stories covered so far only in Chinese or Indonesian outlets, and only an article in that language counts. The house agent doesn't know this. News Search takes a `language` filter (`["zh"]`, `["id"]`); query in that language too.
-- **Spot the fakes.** A fake is often a real story from today with one fact changed, so check every detail of the clue against the article and answer blank when one doesn't match.
-- **Be faster** on the clues it also gets.
-- **Make 2 searches count.** That's the budget per clue, all Octen search APIs combined; the game server refuses the third, and `eval` plays by the same rule.
+## Run it locally
 
-## The eval loop
-
-The easiest way is the dashboard:
+With Git and uv installed, the offline tests exercise the runner, search tool, and benchmark scorer without game credentials.
 
 ```bash
-uv run play.py ui              # opens http://localhost:8765
+git clone https://github.com/fancasta/scoop-wars.git
+cd scoop-wars
+uv run python -m unittest discover -s tests -v
 ```
 
-Press **Run Eval** and watch every practice clue race: your searches, your answer time, the house agent's answer time (dashed line), and the result. The tiles show what matters: how many you got right, your estimated game points, how many of the house agent's misses you got, and your median time. Click a clue to see your link, summary, searches and the judge's reason. Every run is kept on the right, with a chart of points per run; click an old run to see what changed against the one before. Each run starts a fresh process, so it always tests your latest code.
+The 50-case benchmark uses real Codex sessions and a local proxy serving fixed evidence. With Codex installed and signed in, run `uv run python tests/expanded_practice.py --split all`.
 
-Or from the terminal:
-
-```bash
-uv run play.py eval            # a minute or two for every practice clue
-# change one thing
-uv run play.py eval --compare  # did it help?
-```
-
-```
-clue   result    pts   time srch  house   clue text
-p3     right      +2   9.8s    1  14s     A bottle of whisky from a run of only 200 ...
-p7     blank      +0  41.0s    2  missed  A short-range drone that a city-state's ...
-p9     wrong      -2  17.1s    2  missed  Officers found an anaesthetic being ...
-       The article describes the same raid, but it was published outside the 24-hour window.
-
-Right 9/15   Estimated game points +14   Median 16s, slowest 41s
-Clues the house agent missed: you got 1/6 (4 points each)
-```
-
-- **house** is the house agent's time on that clue, or `missed`. The `missed` rows are worth 4 points each, so they're where to focus.
-- **result** comes from the answer key, then the judge: the same model check the game uses for links outside the key. It reads the article and decides whether it reports the same event, was published in the last 24 hours and matches your summary. Wrong and unsure rows print the judge's reason.
-- Runs are saved in `runs/`. Times run a little slower 4 at a time; use `--parallel 1` for exact timings.
-- More practice clues may unlock during the build. Run eval again when the host says so.
-
-## What to change
-
-| What | Where | Why |
-|---|---|---|
-| The search tool | `news_search_mcp.py` | Usually the biggest win. You only get 2 calls, and each round trip costs Codex several seconds: build one precise query, set `language`, use `start_time` for "this morning", return story summaries so the agent can check details, trim the rest. |
-| Codex settings | `play.py` → `codex_command()`, or `CODEX_MODEL` / `CODEX_REASONING` in `.env` | Speed. Codex startup and reasoning take most of the 45 seconds. |
-| The prompt | `prompt.md` | Judgment: checking every detail of the clue against the article (fakes change one fact), when to leave a clue blank, checking dates (last month's version of a story doesn't count). |
-| The whole agent | `play.py` → `run_agent()` | You can replace Codex entirely (below). |
-
-News Search reference: https://docs.octen.ai/capabilities/news-search. Web Search and Octen's other single-query search APIs (Pulse, Image, Video, Business, Place) work through `octen_client.search(api, body)` and share the 2 calls per clue; see [Rules](#rules) for what's off limits.
-
-### Replacing Codex
-
-`run_agent(clue, timeout)` just has to return a `Card` within the timeout. Any model or framework is fine, as long as every search goes through `octen_client` (`news_search()`, or `search()` for the other Octen search APIs). That's what routes your calls through the game server so they count:
-
-```python
-import octen_client
-
-def run_agent(clue: str, timeout: float = 41, verbose: bool = False) -> Card:
-    started = time.time()
-    with octen_client.capture() as searches:
-        data = octen_client.news_search({"query": clue, "count": 10, "time_range": "day"})
-        url, summary = pick_answer(clue, data)  # your logic, e.g. one LLM call
-    return Card(url=url, summary=summary, seconds=time.time() - started, searches=list(searches))
-```
-
-`ask`, `eval` and `play` all call `run_agent()`, so they pick up your version.
-
-## Scoring details
-
-- **First report:** 2 more points if your article is the earliest one in the story's answer key, and the key holds at least 3 articles.
-- **No News Search call:** if your team made no News Search call through the game server between the clue appearing and your card, the card scores 0, even if it's right. That includes blank cards on fake clues.
-- **Nobody right:** a clue that no team gets right, the house agent included, scores 0 for everyone, wrong cards too. Fake clues always count.
-- **Ties:** more right answers wins, then less total time to your right answers.
-
-## Rules
-
-- Search only with Octen: 2 search calls per clue, all Octen search APIs combined (a refused call doesn't count). Broad Search, Answer, Search Agent, Deep Research and Auto Search are off limits (they run many searches per call), and so are other search tools and web browsing. Extract and Embedding are fine.
-- Every search goes through `octen_client`, which routes it through the game server. Octen's own MCP server, CLI or SDK skip the game server, so searches made with them don't count.
-- During the Scoop clock your agent plays alone: 20 clues, about one a minute (a clue closes early once every agent has answered). A team that touches the keyboard gets a warning, then loses its next answer.
-- Local clues (stories covered only in Chinese or Indonesian outlets) only accept an article in that language.
-- The summary on your card is always one sentence in English, whatever language the article is in.
-- If the game server goes down, the host reads the clues aloud and the game master enters your cards by hand. `play.py play` prints every card, so keep that terminal open.
+To run an event practice round, configure the team credentials and Octen key, then use `uv run play.py ui` and select **Run Eval**. The dashboard reads your local run history. The original event checklist, commands, and scoring rules are in the [event guide](docs/event-guide.md).

@@ -2,9 +2,11 @@
 
 This repo is an agent that finds fresh news stories from vague clues. You are helping a team improve it during an hour-long build. The agent runs inside `codex exec`; this file is not part of its prompt (play.py runs it in an empty temp directory).
 
+See [CONTEXT.md](CONTEXT.md) for current agent behavior and eval evidence, [README.md](README.md) for the fork overview and setup, and [the AI working agreement](docs/AI_WORKING_AGREEMENT.md) for changing and validating the agent.
+
 ## Setting up a laptop
 
-If asked to set someone up, work through "Tonight's checklist" in `README.md`. Run the terminal steps yourself (install uv and Codex, clone, `cp .env.example .env`, `uv run play.py doctor`). Ask the person for what only they can do: joining the Wi-Fi, claiming credits on the event page, `codex login`, their `OCTEN_API_KEY`, and the `SCOOP_SERVER` and `SCOOP_TOKEN` lines from the event page (step 7). Teams are made by the organizers; don't run `play.py join`. Never print, paste or commit the contents of `.env`.
+If asked to set someone up, work through [Tonight's checklist](docs/event-guide.md#tonights-checklist). Run the terminal steps yourself (install uv and Codex, clone, `cp .env.example .env`, `uv run play.py doctor`). Ask the person for what only they can do: joining the Wi-Fi, claiming credits on the event page, `codex login`, their `OCTEN_API_KEY`, and the `SCOOP_SERVER` and `SCOOP_TOKEN` lines from the event page (step 7). Teams are made by the organizers; don't run `play.py join`. Never print, paste or commit the contents of `.env`.
 
 ## Layout
 
