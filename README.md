@@ -1,5 +1,7 @@
 # Scoop Wars
 
+**Overview** · [Architecture](ARCHITECTURE.md) · [Practice results](#what-changed-in-practice) · [Evaluation notes](CONTEXT.md)
+
 Give the agent a clue with the headline and names stripped out. It has 45 seconds and two searches to find the original news story. Sometimes the clue changes one fact, and the winning move is to leave the card blank.
 
 The agent searches in English, Chinese, and Indonesian, checks the article behind a promising headline, and decides when the evidence warrants a link. On the same 15 practice clues, the starter earned **+10 points**. The revised agent earned **+40, +40, and +38** in its final three runs, with **zero wrong links**. Its best recorded run got **15/15** in **14.1 seconds per clue at the median**.
@@ -35,11 +37,9 @@ These are cards from the +44 run. For articles outside the organizers’ answer 
 | Counterfeit notes at a coffee stall | The agent matched the **Rp100,000 denomination** and the two officers posing as buyers. Its English card linked to the Indonesian report in the answer key. [Kompas](https://surabaya.kompas.com/read/2026/11/18/062445778/sopir-travel-di-trenggalek-beli-uang-palsu-rp-13-juta-terjebak-polisi-yang) | +2 · 1 search · 14.1 s |
 | Altered shingles-vaccine claim | The starter submitted a link and scored −2. The revision made the required search, then left both the URL and summary empty. The scorer awarded full credit for the fake. | +2 · 1 search · 12.1 s |
 
-## Search and verification
+## Search and evaluation
 
-- **Search routing.** The first query uses country and language cues in the clue. When an English search finds no lead on a local incident, the agent can spend its last call on native terms. [Agent prompt](prompt.md)
-- **Article verification.** The search tool checks publication timestamps on individual and grouped results. It can return text from up to four distinct articles to verify details missing from a headline. [News Search tool](news_search_mcp.py)
-- **Measurement and testing.** The evaluation records startup and search timings and includes a 50-case benchmark with authored evidence and a held-out split. The final version passed **48/50 automatically** and **49/50 after review**. The scorer missed a valid currency notation. The remaining miss was a cafeteria story for which the agent retried in Chinese and returned an empty card. [Benchmark runner](tests/expanded_practice.py) · [Evaluation notes](CONTEXT.md)
+The agent chooses a search language, reads the source article and uses its second search to resolve missing evidence. The architecture guide traces both the decision to cite or abstain and the two evaluation methods. On the separate 50-case benchmark, the final version passed **48/50 automatically** and **49/50 after review**. The scorer missed a valid currency notation. [Architecture diagrams](ARCHITECTURE.md) · [Benchmark runner](tests/expanded_practice.py) · [Evaluation notes](CONTEXT.md)
 
 The original CLI, dashboard, and game scoring come from the organizers. Hieu’s parallel-search implementation provided a comparison for fuller article retrieval. This fork keeps the second call available for a follow-up informed by the first result. [Starter kit](https://github.com/derekzaw-007/scoop-wars) · [Hieu’s reference revision](https://github.com/daongochieu2810/scoop-wars/commit/1f2bdb226b1c8660b8b1acf06b8a89717e11d118)
 
