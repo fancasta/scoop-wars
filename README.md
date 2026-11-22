@@ -1,4 +1,6 @@
-# Scoop Wars
+# News Claim Verification Agent
+
+Octen AI Hackathon | Nov 2026
 
 **Overview** · [Architecture](ARCHITECTURE.md) · [Practice results](#what-changed-in-practice) · [Evaluation notes](CONTEXT.md)
 
